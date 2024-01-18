@@ -1,0 +1,69 @@
+name: ESM2_original
+save_dir: saved/
+seed: 1234
+target_devices: [0]
+
+arch:
+  type: ESM2_original
+  args:
+    init_n_channels: 1280
+    embedding_pretrained: "pretrained/esm2_t33_650M_UR50D.pt"
+    finetuning: 'LoRA'
+    gradient_checkpointing: 2
+
+data_loader:
+  type: NSPDataLoader
+  args:
+    train_path: [/home/deag/multitask/data/Train_HHblits_extended.npz]
+    test_path: [/home/deag/multitask/data/CASP12_HHblits_extended.npz,
+    /home/deag/multitask/data/CB513_HHblits_extended.npz,
+    /home/deag/multitask/data/TS115_HHblits_extended.npz]
+    dataset_loader: NSPDataOnlyEncoding
+    batch_size: 5
+    nworkers: 2
+    shuffle: true
+    validation_split: 0.05
+
+loss: multi_task_loss_original
+
+n_outputs: 13 
+
+augmentation:
+  type: sparse_token
+  args: {}
+
+metrics:
+  metric_ss8: 0
+  metric_ss3: 1
+  metric_dis_mcc: 2
+  metric_dis_fnr: 2
+  metric_rsa: 3
+  metric_asa: 3
+  metric_phi: 4
+  metric_psi: 5
+  metric_tasa: 6
+  metric_thsa: 7
+  metric_lhp: 8
+  metric_hp_loc_mcc: 9
+  metric_hp_loc_fnr: 9
+  metric_lhp_loc_mcc: 10
+  metric_lhp_loc_fnr: 10
+  metric_species: 11
+  metric_expression: 12
+
+optimizer:
+  type: Adam
+  args:
+    lr: 0.00005
+    weight_decay: 0.005
+
+lr_scheduler:
+  type: null
+
+training:
+  early_stop: 50
+  epochs: 50
+  gradient_accumulation: 6
+  monitor: min val_loss
+  save_period: 1
+  tensorboard: true

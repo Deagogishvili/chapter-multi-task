@@ -14,12 +14,13 @@ arch:
 data_loader:
   type: NSPDataLoader
   args:
-    train_path: [/home/deag/multitask/data/aggregation/Train_HHblits_extended.npz]
-    test_path: [/home/deag/multitask/data/aggregation/CASP12_HHblits_extended.npz,
-    /home/deag/multitask/data/aggregation/CB513_HHblits_extended.npz,
-    /home/deag/multitask/data/aggregation/TS115_HHblits_extended.npz]
+    train_path: [/scistor/informatica/dgi460/multitask/data/aggregation/Train_HHblits_extended.npz]
+    test_path: [/scistor/informatica/dgi460/multitask/data/aggregation/CASP12_HHblits_extended.npz,
+    /scistor/informatica/dgi460/multitask/data/aggregation/CB513_HHblits_extended.npz,
+    /scistor/informatica/dgi460/multitask/data/aggregation/TS115_HHblits_extended.npz,
+    /scistor/informatica/dgi460/multitask/data/aggregation/Test_agg.npz]
     dataset_loader: NSPDataOnlyEncoding
-    batch_size: 5
+    batch_size: 3
     nworkers: 2
     shuffle: true
     validation_split: 0.05

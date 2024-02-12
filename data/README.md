@@ -7,6 +7,8 @@ Folder expression contains expression.csv in which PDB IDs are matched to UniPro
 
 Folder patches - contains individual csv files for each PDB entry, calculated by MolPatch Tool. MolPatch takes a PDB file and calculates the area of hydrophobic patch for each residue. Rank 0 means the largest hydrophobic patch. The value means that a residue is in a hydrophobic patch that is of that specific size.
 
+folder benchmarking contains predictions for LHP, RHSA, and THSA from old shallow learning algorithms trained in the paper - How sticky are our proteins. In order to validate our model and compare to previous ones, we used the same test dataset and old predictions and plot the error threshold curves.
+
 Folder miscellaneous contains files for data exploration and result interpretation/assessment. 
 alphafold_molpatch.csv contains all human proteins predicted by alphafold and molpatch calculations based on alphafold structures.
 consensus_mapped.txt is id mapping for expression data to be used

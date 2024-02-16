@@ -240,8 +240,8 @@ def metric_dis_mcc(outputs: torch.tensor, labels: torch.tensor) -> float:
     return mcc(outputs, labels)
 
 
-def metric_dis_fnr(outputs: torch.tensor, labels: torch.tensor) -> float:
-    """ Returns false positive rate disorder metric
+def metric_dis_fpr(outputs: torch.tensor, labels: torch.tensor) -> float:
+    """ Returns false positive rate disorder metric (0 is disordered so positive class)
     Args:
         outputs: tensor with predicted values
         labels: tensor with correct values
@@ -254,6 +254,19 @@ def metric_dis_fnr(outputs: torch.tensor, labels: torch.tensor) -> float:
 
     return fnr(outputs, labels)
 
+def metric_dis_fnr(outputs: torch.tensor, labels: torch.tensor) -> float:
+    """ Returns false positive rate disorder metric (0 is disordered so positive class)
+    Args:
+        outputs: tensor with predicted values
+        labels: tensor with correct values
+    """
+    mask = get_mask(labels)
+
+    labels = labels[:, :, 1].unsqueeze(2)
+    labels = torch.argmax(torch.cat([labels, 1.0 - labels], dim=2), dim=2)[mask == 1]
+    outputs = torch.argmax(outputs, dim=2)[mask == 1]
+
+    return fpr(outputs, labels)
 
 def metric_rsa(outputs: torch.tensor, labels: torch.tensor) -> float:
     """ Returns relative surface accesibility metric

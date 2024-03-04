@@ -1,4 +1,4 @@
-name: basic_w_patches
+name: patchprot_wo_lora
 save_dir: saved/
 seed: 1234
 target_devices: [0]
@@ -8,25 +8,25 @@ arch:
   args:
     init_n_channels: 1280
     embedding_pretrained: "/scistor/informatica/dgi460/PROT/PROT/pretrained/esm2_t33_650M_UR50D.pt"
-    finetuning: 'LoRA'
-    gradient_checkpointing: 2
+    finetuning: 'no finetuning'
 
 data_loader:
   type: NSPDataLoader
   args:
-    train_path: [/scistor/informatica/dgi460/PROT/data/extended/Train_HHblits_extended.npz]
+    train_path: [/scistor/informatica/dgi460/PROT/data/extended_w_agg/Train_HHblits_extended_w_agg.npz]
     test_path: [/scistor/informatica/dgi460/PROT/data/extended/CASP12_HHblits_extended.npz,
     /scistor/informatica/dgi460/PROT/data/extended/CB513_HHblits_extended.npz,
-    /scistor/informatica/dgi460/PROT/data/extended/TS115_HHblits_extended.npz]
+    /scistor/informatica/dgi460/PROT/data/extended/TS115_HHblits_extended.npz,
+    /scistor/informatica/dgi460/PROT/data/extended_w_agg/Test_aggregation.npz]
     dataset_loader: NSPDataOnlyEncoding
-    batch_size: 3
+    batch_size: 15
     nworkers: 2
     shuffle: true
     validation_split: 0.05
 
-loss: multi_task_loss_ss_patches
+loss: multi_task_loss
 
-n_outputs: 11
+n_outputs: 14
 
 augmentation:
   type: sparse_token
@@ -48,6 +48,9 @@ metrics:
   metric_hp_loc_fnr: 9
   metric_lhp_loc_mcc: 10
   metric_lhp_loc_fnr: 10
+  metric_species: 11
+  metric_expression: 12
+  metric_aggregation: 13
 
 optimizer:
   type: Adam
@@ -61,7 +64,6 @@ lr_scheduler:
 training:
   early_stop: 15
   epochs: 15
-  gradient_accumulation: 6
   monitor: min val_loss
   save_period: 1
   tensorboard: true

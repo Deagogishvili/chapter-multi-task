@@ -296,98 +296,6 @@ def aggregation(outputs: torch.tensor, labels: torch.tensor) -> torch.tensor:
 def loss_aggregation(outputs: torch.tensor, labels: torch.tensor) -> torch.tensor:
     return aggregation(outputs[0], labels)
 
-def multi_task_loss_original(outputs: torch.tensor, labels: torch.tensor, method: nn.Module, not_passed: bool) -> torch.tensor:
-    """ Returns a weighted multi task loss. 
-        Combines ss8, ss3, disorder, rsa, phi and psi loss.
-    Args:
-        outputs: tensor with psi predictions
-        labels: tensor with labels
-    """
-    ss8_w = 1
-    ss3_w = 5
-    dis_w = 5
-    rsa_w = 100
-    phi_w = 5
-    psi_w = 5
-    tasa_w = 0.0000001
-    thsa_w = 0.000002
-    lhp_w = 0.000005
-    hp_loc_w = 5
-    lhp_loc_w = 5
-    #Old 0.004
-    species_w = 0.04
-    #Old 0.006
-    expression_w = 0.06
-
-    if not_passed:
-        not_passed=False
-        print("Multi Task Loss")
-        print(f"SS8 : {ss8_w} // SS3: {ss3_w} // DIS: {dis_w} // RSA: {rsa_w} // PHI: {phi_w} // PSI: {psi_w} // TASA: {tasa_w} // THSA: {thsa_w} // LHP: {lhp_w} // HP LOC: {hp_loc_w} // LHP LOC: {lhp_loc_w} // SPECIES: {species_w} // EXPRESSION: {expression_w}")
-    # weighted losses
-    _ss8 = ss8(outputs[0], labels) * ss8_w
-    _ss3 = ss3(outputs[1], labels) * ss3_w
-    _dis = disorder(outputs[2], labels) * dis_w
-    _rsa = rsa(outputs[3], labels) * rsa_w
-    _phi = phi(outputs[4], labels) * phi_w
-    _psi = psi(outputs[5], labels) * psi_w 
-    _tasa = tasa(outputs[6], labels) * tasa_w
-    _thsa = thsa(outputs[7], labels) * thsa_w
-    _lhp = lhp(outputs[8], labels) * lhp_w
-    _hp_loc = hp_loc(outputs[9], labels) * hp_loc_w
-    _lhp_loc = hp_loc(outputs[10], labels) * lhp_loc_w
-    _species = species(outputs[11], labels) * species_w
-    _expression = expression(outputs[12], labels) * expression_w
-
-    loss = method(_ss8, _ss3, _dis, _rsa, _phi, _psi, _tasa, _thsa, _lhp, _hp_loc, _lhp_loc, _species, _expression)
-    return loss, not_passed
-
-def multi_task_loss(outputs: torch.tensor, labels: torch.tensor, method: nn.Module, not_passed: bool) -> torch.tensor:
-    """ Returns a weighted multi task loss. 
-        Combines ss8, ss3, disorder, rsa, phi and psi loss.
-    Args:
-        outputs: tensor with psi predictions
-        labels: tensor with labels
-    """
-    ss8_w = 1
-    ss3_w = 5
-    dis_w = 5
-    rsa_w = 100
-    phi_w = 5
-    psi_w = 5
-    tasa_w = 0.0000001
-    thsa_w = 0.000002
-    lhp_w = 0.000005
-    hp_loc_w = 5
-    lhp_loc_w = 5
-    #Old 0.004
-    species_w = 0.04
-    #Old 0.006
-    expression_w = 0.06
-    aggregation_w = 0.06
-
-    if not_passed:
-        not_passed=False
-        print("Multi Task Loss")
-        print(f"SS8 : {ss8_w} // SS3: {ss3_w} // DIS: {dis_w} // RSA: {rsa_w} // PHI: {phi_w} // PSI: {psi_w} // TASA: {tasa_w} // THSA: {thsa_w} // LHP: {lhp_w} // HP LOC: {hp_loc_w} // LHP LOC: {lhp_loc_w} // SPECIES: {species_w} // EXPRESSION: {expression_w} // AGGREGATION: {aggregation_w}")
-    # weighted losses
-    _ss8 = ss8(outputs[0], labels) * ss8_w
-    _ss3 = ss3(outputs[1], labels) * ss3_w
-    _dis = disorder(outputs[2], labels) * dis_w
-    _rsa = rsa(outputs[3], labels) * rsa_w
-    _phi = phi(outputs[4], labels) * phi_w
-    _psi = psi(outputs[5], labels) * psi_w 
-    _tasa = tasa(outputs[6], labels) * tasa_w
-    _thsa = thsa(outputs[7], labels) * thsa_w
-    _lhp = lhp(outputs[8], labels) * lhp_w
-    _hp_loc = hp_loc(outputs[9], labels) * hp_loc_w
-    _lhp_loc = hp_loc(outputs[10], labels) * lhp_loc_w
-    _species = species(outputs[11], labels) * species_w
-    _expression = expression(outputs[12], labels) * expression_w
-    _aggregation = aggregation(outputs[13], labels) * aggregation_w
-
-    loss = method(_ss8, _ss3, _dis, _rsa, _phi, _psi, _tasa, _thsa, _lhp, _hp_loc, _lhp_loc, _species, _expression, _aggregation)
-    return loss, not_passed
-
 
 def multi_task_loss_basic(outputs: torch.tensor, labels: torch.tensor, method: nn.Module, not_passed: bool) -> torch.tensor:
     """ Returns a weighted multi task loss. 
@@ -463,36 +371,6 @@ def multi_task_loss_ss(outputs: torch.tensor, labels: torch.tensor, method: nn.M
     loss = method(_ss8, _ss3, _dis, _rsa, _phi, _psi) 
     return loss, not_passed
 
-def basic_agg_loss(outputs: torch.tensor, labels: torch.tensor, method: nn.Module, not_passed: bool) -> torch.tensor:
-    """ Returns a weighted multi task loss. 
-        Combines ss8, ss3, disorder, rsa, phi and psi loss.
-    Args:
-        outputs: tensor with psi predictions
-        labels: tensor with labels
-    """
-    ss8_w = 1
-    ss3_w = 5
-    dis_w = 5
-    rsa_w = 100
-    phi_w = 5
-    psi_w = 5
-    aggregation_w = 0.06
-
-    if not_passed:
-        not_passed=False
-        print("Multi Task Loss")
-        print(f"SS8 : {ss8_w} // SS3: {ss3_w} // DIS: {dis_w} // RSA: {rsa_w} // PHI: {phi_w} // PSI: {psi_w} // AGGREGATION: {aggregation_w}")
-    # weighted losses
-    _ss8 = ss8(outputs[0], labels) * ss8_w
-    _ss3 = ss3(outputs[1], labels) * ss3_w
-    _dis = disorder(outputs[2], labels) * dis_w
-    _rsa = rsa(outputs[3], labels) * rsa_w
-    _phi = phi(outputs[4], labels) * phi_w
-    _psi = psi(outputs[5], labels) * psi_w 
-    _aggregation = aggregation(outputs[6], labels) * aggregation_w
-
-    loss = method(_ss8, _ss3, _dis, _rsa, _phi, _psi, _aggregation)
-    return loss, not_passed
 
 def multi_task_loss_ss_patches(outputs: torch.tensor, labels: torch.tensor, method: nn.Module, not_passed: bool) -> torch.tensor:
 
@@ -542,7 +420,7 @@ def loss_patches(outputs: torch.tensor, labels: torch.tensor, method: nn.Module,
     loss = method(_lhp, _hp_loc, _lhp_loc)
     return loss, not_passed
 
-def multi_task_loss_wo_agg(outputs: torch.tensor, labels: torch.tensor, method: nn.Module, not_passed: bool) -> torch.tensor:
+def multi_task_loss(outputs: torch.tensor, labels: torch.tensor, method: nn.Module, not_passed: bool) -> torch.tensor:
     """ Returns a weighted multi task loss. 
         Combines ss8, ss3, disorder, rsa, phi and psi loss.
     Args:
@@ -560,9 +438,7 @@ def multi_task_loss_wo_agg(outputs: torch.tensor, labels: torch.tensor, method: 
     lhp_w = 0.000005
     hp_loc_w = 5
     lhp_loc_w = 5
-    #Old 0.004
     species_w = 0.04
-    #Old 0.006
     expression_w = 0.06
 
     # weighted losses
@@ -579,9 +455,8 @@ def multi_task_loss_wo_agg(outputs: torch.tensor, labels: torch.tensor, method: 
     _lhp_loc = hp_loc(outputs[10], labels) * lhp_loc_w
     _species = species(outputs[11], labels) * species_w
     _expression = expression(outputs[12], labels) * expression_w
-#    _aggregation = aggregation(outputs[13], labels) * aggregation_w
 
-    loss = method(_ss8, _ss3, _dis, _rsa, _phi, _psi, _tasa, _thsa, _lhp, _hp_loc, _lhp_loc, _species, _expression) #, _aggregation)
+    loss = method(_ss8, _ss3, _dis, _rsa, _phi, _psi, _tasa, _thsa, _lhp, _hp_loc, _lhp_loc, _species, _expression) 
     return loss, not_passed
 
 def multi_task_extended(outputs: torch.tensor, labels: torch.tensor) -> torch.tensor:

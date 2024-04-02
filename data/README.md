@@ -6,7 +6,7 @@ Folder patches - contains individual csv files for each PDB entry, calculated by
 
 folder benchmarking contains predictions for LHP from old shallow learning algorithms trained in the paper - How sticky are our proteins. In order to validate our model and compare to previous ones, we used the same test dataset and old predictions and plot the error threshold curves.
 
-folder validation contains proteins from casp14 competition. Folder also contains AlphaFold predictions for these proteins, MolPatch calculations over the target PDB structures and AlphaFold predictions.
+folder validation contains proteins from casp14 competition. Folder also contains AlphaFold predictions for these proteins, MolPatch calculations over the target PDB structures and AlphaFold predictions. We predicted LHP of these proteins with PatchProt and compared it with MolPatch calculations over AlphaFold structures.
 
 Folder miscellaneous contains files for data exploration and result interpretation/assessment. 
 alphafold_molpatch.csv contains all human proteins predicted by alphafold and molpatch calculations based on alphafold structures.

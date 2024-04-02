@@ -11,7 +11,7 @@ In this study, we harnessed existing deep learning architecture by NetSurfP-3.0 
 Keywords: Multi-task learning, Sequence-based protein property prediction, Protein language model, ESM, LoRA.
 
 ![image](/figures/model.png)
-Figure 1. Model architecture. The model takes protein sequence as input and predicts both global and local protein properties. The model consists of an embedding output from ESM-2 protein language model \cite{lin2023evolutionary} and the downstream architecture similar to NetSurfP-3.0. Additionally, a parameter-efficient fine-tuning strategy was implemented. The decoding head consists of a residual block with two convolutional neural network (CNN) layers and a two-layer bidirectional long short-term memory (BiLSTM) network. The output is fed into a fully connected layer to provide predictions for all residues- and protein-level tasks.
+Figure 1. Model architecture. The model takes protein sequence as input and predicts both global and local protein properties. The model consists of an embedding output from ESM-2 protein language model and the downstream architecture similar to NetSurfP-3.0. Additionally, a parameter-efficient fine-tuning strategy was implemented. The decoding head consists of a residual block with two convolutional neural network (CNN) layers and a two-layer bidirectional long short-term memory (BiLSTM) network. The output is fed into a fully connected layer to provide predictions for all residues- and protein-level tasks.
 
 Details:
 

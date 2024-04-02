@@ -1,1 +1,0 @@
-cli.py --> this code file handle the PROT commands (train/predict/resume) that you can use to interact with the package (entry points)

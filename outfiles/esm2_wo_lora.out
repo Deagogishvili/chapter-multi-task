@@ -1,0 +1,944 @@
+Requirement already satisfied: click in /scistor/informatica/dgi460/anaconda3/envs/dl2022/lib/python3.10/site-packages (8.1.3)
+Requirement already satisfied: fair-esm in /scistor/informatica/dgi460/anaconda3/envs/dl2022/lib/python3.10/site-packages (2.0.0)
+Processing /scistor/informatica/dgi460/PROT/PROT
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: PROT
+  Building wheel for PROT (setup.py): started
+  Building wheel for PROT (setup.py): finished with status 'done'
+  Created wheel for PROT: filename=PROT-0.0.1-py3-none-any.whl size=111690 sha256=70befbbf92da60f40cb4b09d598681e14dc33727852d03d7562a840f8bf981ad
+  Stored in directory: /scratch/680788/pip-ephem-wheel-cache-260fpuei/wheels/f3/f3/d5/e95d019bbe728e863c8658a0c362e103b5264b28afecea62b9
+Successfully built PROT
+Installing collected packages: PROT
+  Attempting uninstall: PROT
+    Found existing installation: PROT 0.0.1
+    Uninstalling PROT-0.0.1:
+      Successfully uninstalled PROT-0.0.1
+Successfully installed PROT-0.0.1
+2024-02-23 11:12:34,967 - PROT.PROT.main - INFO - Building: PROT.models.ESM2_multitask
+FINETUNING CHOSEN: no finetuning
+Gradient Checkpointing None
+2024-02-23 11:12:43,047 - PROT.PROT.models.ESM2_multitask.model - INFO - Params to learn:
+2024-02-23 11:12:43,049 - PROT.PROT.models.ESM2_multitask.model - INFO - 	ss8.0.weight
+2024-02-23 11:12:43,050 - PROT.PROT.models.ESM2_multitask.model - INFO - 	ss8.0.bias
+2024-02-23 11:12:43,052 - PROT.PROT.models.ESM2_multitask.model - INFO - 	ss3.0.weight
+2024-02-23 11:12:43,053 - PROT.PROT.models.ESM2_multitask.model - INFO - 	ss3.0.bias
+2024-02-23 11:12:43,054 - PROT.PROT.models.ESM2_multitask.model - INFO - 	disorder.0.weight
+2024-02-23 11:12:43,055 - PROT.PROT.models.ESM2_multitask.model - INFO - 	disorder.0.bias
+2024-02-23 11:12:43,056 - PROT.PROT.models.ESM2_multitask.model - INFO - 	rsa.0.weight
+2024-02-23 11:12:43,057 - PROT.PROT.models.ESM2_multitask.model - INFO - 	rsa.0.bias
+2024-02-23 11:12:43,058 - PROT.PROT.models.ESM2_multitask.model - INFO - 	phi.0.weight
+2024-02-23 11:12:43,060 - PROT.PROT.models.ESM2_multitask.model - INFO - 	phi.0.bias
+2024-02-23 11:12:43,061 - PROT.PROT.models.ESM2_multitask.model - INFO - 	psi.0.weight
+2024-02-23 11:12:43,062 - PROT.PROT.models.ESM2_multitask.model - INFO - 	psi.0.bias
+2024-02-23 11:12:43,063 - PROT.PROT.models.ESM2_multitask.model - INFO - 	tasa.0.weight
+2024-02-23 11:12:43,064 - PROT.PROT.models.ESM2_multitask.model - INFO - 	tasa.0.bias
+2024-02-23 11:12:43,065 - PROT.PROT.models.ESM2_multitask.model - INFO - 	thsa.0.weight
+2024-02-23 11:12:43,067 - PROT.PROT.models.ESM2_multitask.model - INFO - 	thsa.0.bias
+2024-02-23 11:12:43,068 - PROT.PROT.models.ESM2_multitask.model - INFO - 	lhp.0.weight
+2024-02-23 11:12:43,069 - PROT.PROT.models.ESM2_multitask.model - INFO - 	lhp.0.bias
+2024-02-23 11:12:43,070 - PROT.PROT.models.ESM2_multitask.model - INFO - 	hp_loc.0.weight
+2024-02-23 11:12:43,071 - PROT.PROT.models.ESM2_multitask.model - INFO - 	hp_loc.0.bias
+2024-02-23 11:12:43,073 - PROT.PROT.models.ESM2_multitask.model - INFO - 	lhp_loc.0.weight
+2024-02-23 11:12:43,074 - PROT.PROT.models.ESM2_multitask.model - INFO - 	lhp_loc.0.bias
+2024-02-23 11:12:43,075 - PROT.PROT.models.ESM2_multitask.model - INFO - 	species.0.weight
+2024-02-23 11:12:43,076 - PROT.PROT.models.ESM2_multitask.model - INFO - 	species.0.bias
+2024-02-23 11:12:43,078 - PROT.PROT.models.ESM2_multitask.model - INFO - 	expression.0.weight
+2024-02-23 11:12:43,079 - PROT.PROT.models.ESM2_multitask.model - INFO - 	expression.0.bias
+2024-02-23 11:12:43,080 - PROT.PROT.models.ESM2_multitask.model - INFO - 	aggregation.0.weight
+2024-02-23 11:12:43,081 - PROT.PROT.models.ESM2_multitask.model - INFO - 	aggregation.0.bias
+2024-02-23 11:12:43,085 - PROT.PROT.models.ESM2_multitask.model - INFO - <init>: 
+ESM2_multitask(
+  (embedding): ESM2Embedding(
+    (model): ESM2(
+      (embed_tokens): Embedding(33, 1280, padding_idx=1)
+      (layers): ModuleList(
+        (0): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (1): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (2): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (3): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (4): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (5): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (6): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (7): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (8): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (9): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (10): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (11): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (12): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (13): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (14): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (15): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (16): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (17): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (18): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (19): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (20): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (21): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (22): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (23): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (24): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (25): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (26): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (27): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (28): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (29): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (30): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (31): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+        (32): TransformerLayer(
+          (self_attn): MultiheadAttention(
+            (k_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (v_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (q_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (out_proj): Linear(in_features=1280, out_features=1280, bias=True)
+            (rot_emb): RotaryEmbedding()
+          )
+          (self_attn_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1280, out_features=5120, bias=True)
+          (fc2): Linear(in_features=5120, out_features=1280, bias=True)
+          (final_layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+      (contact_head): ContactPredictionHead(
+        (regression): Linear(in_features=660, out_features=1, bias=True)
+        (activation): Sigmoid()
+      )
+      (emb_layer_norm_after): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+      (lm_head): RobertaLMHead(
+        (dense): Linear(in_features=1280, out_features=1280, bias=True)
+        (layer_norm): LayerNorm((1280,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+  )
+  (ss8): Sequential(
+    (0): Linear(in_features=1280, out_features=8, bias=True)
+  )
+  (ss3): Sequential(
+    (0): Linear(in_features=1280, out_features=3, bias=True)
+  )
+  (disorder): Sequential(
+    (0): Linear(in_features=1280, out_features=2, bias=True)
+  )
+  (rsa): Sequential(
+    (0): Linear(in_features=1280, out_features=1, bias=True)
+    (1): Sigmoid()
+  )
+  (phi): Sequential(
+    (0): Linear(in_features=1280, out_features=2, bias=True)
+    (1): Tanh()
+  )
+  (psi): Sequential(
+    (0): Linear(in_features=1280, out_features=2, bias=True)
+    (1): Tanh()
+  )
+  (tasa): Sequential(
+    (0): Linear(in_features=1280, out_features=1, bias=True)
+  )
+  (thsa): Sequential(
+    (0): Linear(in_features=1280, out_features=1, bias=True)
+  )
+  (lhp): Sequential(
+    (0): Linear(in_features=1280, out_features=1, bias=True)
+  )
+  (hp_loc): Sequential(
+    (0): Linear(in_features=1280, out_features=2, bias=True)
+  )
+  (lhp_loc): Sequential(
+    (0): Linear(in_features=1280, out_features=2, bias=True)
+  )
+  (species): Sequential(
+    (0): Linear(in_features=1280, out_features=10, bias=True)
+  )
+  (expression): Sequential(
+    (0): Linear(in_features=1280, out_features=2, bias=True)
+  )
+  (aggregation): Sequential(
+    (0): Linear(in_features=1280, out_features=2, bias=True)
+  )
+)
+Trainable parameters: 49959
+2024-02-23 11:12:43,100 - PROT.PROT.main - INFO - Using devices [0] of available devices [0]
+Using devices [0] of available devices [0]
+2024-02-23 11:12:44,420 - PROT.PROT.main - INFO - Building: torch.optim.Adam
+2024-02-23 11:12:44,422 - PROT.PROT.models.ESM2_multitask.model - INFO - Params to learn:
+2024-02-23 11:12:44,425 - PROT.PROT.models.ESM2_multitask.model - INFO - 	ss8.0.weight
+2024-02-23 11:12:44,426 - PROT.PROT.models.ESM2_multitask.model - INFO - 	ss8.0.bias
+2024-02-23 11:12:44,428 - PROT.PROT.models.ESM2_multitask.model - INFO - 	ss3.0.weight
+2024-02-23 11:12:44,429 - PROT.PROT.models.ESM2_multitask.model - INFO - 	ss3.0.bias
+2024-02-23 11:12:44,430 - PROT.PROT.models.ESM2_multitask.model - INFO - 	disorder.0.weight
+2024-02-23 11:12:44,431 - PROT.PROT.models.ESM2_multitask.model - INFO - 	disorder.0.bias
+2024-02-23 11:12:44,433 - PROT.PROT.models.ESM2_multitask.model - INFO - 	rsa.0.weight
+2024-02-23 11:12:44,434 - PROT.PROT.models.ESM2_multitask.model - INFO - 	rsa.0.bias
+2024-02-23 11:12:44,435 - PROT.PROT.models.ESM2_multitask.model - INFO - 	phi.0.weight
+2024-02-23 11:12:44,436 - PROT.PROT.models.ESM2_multitask.model - INFO - 	phi.0.bias
+2024-02-23 11:12:44,437 - PROT.PROT.models.ESM2_multitask.model - INFO - 	psi.0.weight
+2024-02-23 11:12:44,438 - PROT.PROT.models.ESM2_multitask.model - INFO - 	psi.0.bias
+2024-02-23 11:12:44,439 - PROT.PROT.models.ESM2_multitask.model - INFO - 	tasa.0.weight
+2024-02-23 11:12:44,441 - PROT.PROT.models.ESM2_multitask.model - INFO - 	tasa.0.bias
+2024-02-23 11:12:44,442 - PROT.PROT.models.ESM2_multitask.model - INFO - 	thsa.0.weight
+2024-02-23 11:12:44,443 - PROT.PROT.models.ESM2_multitask.model - INFO - 	thsa.0.bias
+2024-02-23 11:12:44,444 - PROT.PROT.models.ESM2_multitask.model - INFO - 	lhp.0.weight
+2024-02-23 11:12:44,445 - PROT.PROT.models.ESM2_multitask.model - INFO - 	lhp.0.bias
+2024-02-23 11:12:44,446 - PROT.PROT.models.ESM2_multitask.model - INFO - 	hp_loc.0.weight
+2024-02-23 11:12:44,447 - PROT.PROT.models.ESM2_multitask.model - INFO - 	hp_loc.0.bias
+2024-02-23 11:12:44,448 - PROT.PROT.models.ESM2_multitask.model - INFO - 	lhp_loc.0.weight
+2024-02-23 11:12:44,450 - PROT.PROT.models.ESM2_multitask.model - INFO - 	lhp_loc.0.bias
+2024-02-23 11:12:44,451 - PROT.PROT.models.ESM2_multitask.model - INFO - 	species.0.weight
+2024-02-23 11:12:44,452 - PROT.PROT.models.ESM2_multitask.model - INFO - 	species.0.bias
+2024-02-23 11:12:44,453 - PROT.PROT.models.ESM2_multitask.model - INFO - 	expression.0.weight
+2024-02-23 11:12:44,454 - PROT.PROT.models.ESM2_multitask.model - INFO - 	expression.0.bias
+2024-02-23 11:12:44,455 - PROT.PROT.models.ESM2_multitask.model - INFO - 	aggregation.0.weight
+2024-02-23 11:12:44,456 - PROT.PROT.models.ESM2_multitask.model - INFO - 	aggregation.0.bias
+2024-02-23 11:12:44,458 - PROT.PROT.main - INFO - Building: PROT.data_loader.augmentation.sparse_token
+FINETUNING CHOSEN: no finetuning
+Gradient Checkpointing None
+2024-02-23 11:12:46,080 - PROT.PROT.main - INFO - Building: PROT.data_loader.data_loaders.NSPDataLoader
+2024-02-23 11:17:14,802 - PROT.PROT.main - INFO - Getting loss and metric function handles
+2024-02-23 11:17:14,803 - PROT.PROT.main - INFO - Initialising trainer
+GRADIENT ACCUMULATION None
+2024-02-23 11:17:14,817 - PROT.PROT.base.base_trainer - INFO - Starting training...
+Multi Task Loss
+SS8 : 1 // SS3: 5 // DIS: 5 // RSA: 100 // PHI: 5 // PSI: 5
+2024-02-23 11:17:18,456 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [0/10320 (0%)] Loss: 17.772266
+2024-02-23 11:41:28,854 - PROT.PROT.base.base_trainer - INFO - epoch          : 0
+2024-02-23 11:41:28,858 - PROT.PROT.base.base_trainer - INFO - loss           : 12.141480291697116
+2024-02-23 11:41:28,859 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.29487547278404236
+2024-02-23 11:41:28,860 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.24191240966320038
+2024-02-23 11:41:28,862 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.01338125392794609
+2024-02-23 11:41:28,863 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.815412163734436
+2024-02-23 11:41:28,864 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.22623631358146667
+2024-02-23 11:41:28,865 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.3276698589324951
+2024-02-23 11:41:28,866 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 101.52220916748047
+2024-02-23 11:41:28,867 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 87.21037292480469
+2024-02-23 11:41:28,868 - PROT.PROT.base.base_trainer - INFO - val_loss       : 9.975413925973251
+2024-02-23 11:41:28,869 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.5873588135541585
+2024-02-23 11:41:28,870 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.7186772178899759
+2024-02-23 11:41:28,871 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0
+2024-02-23 11:41:28,872 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.0
+2024-02-23 11:41:28,873 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.6401923856392118
+2024-02-23 11:41:28,875 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.6250354966554255
+2024-02-23 11:41:28,876 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 23.831147883651003
+2024-02-23 11:41:28,877 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 39.97208840204781
+2024-02-23 11:41:42,877 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/esm2_wo_lora/0223-111714/checkpoints/checkpoint-epoch0.pth ...
+2024-02-23 11:41:59,563 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/esm2_wo_lora/0223-111714/checkpoints/model_best.pth
+2024-02-23 11:42:04,012 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [0/10320 (0%)] Loss: 10.298404
+2024-02-23 12:06:14,679 - PROT.PROT.base.base_trainer - INFO - epoch          : 1
+2024-02-23 12:06:14,680 - PROT.PROT.base.base_trainer - INFO - loss           : 9.36190434536748
+2024-02-23 12:06:14,681 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.5939202308654785
+2024-02-23 12:06:14,683 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.7097791433334351
+2024-02-23 12:06:14,684 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0
+2024-02-23 12:06:14,685 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.0
+2024-02-23 12:06:14,686 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.6126318573951721
+2024-02-23 12:06:14,687 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.5960460305213928
+2024-02-23 12:06:14,688 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 22.0247859954834
+2024-02-23 12:06:14,690 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 40.05215072631836
+2024-02-23 12:06:14,691 - PROT.PROT.base.base_trainer - INFO - val_loss       : 8.886847684304213
+2024-02-23 12:06:14,692 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.6578176398778753
+2024-02-23 12:06:14,693 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.7783607799848508
+2024-02-23 12:06:14,694 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.13014674960420683
+2024-02-23 12:06:14,695 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 6.746720593307525e-05
+2024-02-23 12:06:14,696 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.7003906110775867
+2024-02-23 12:06:14,697 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.7067421199650782
+2024-02-23 12:06:14,698 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 20.37472111888477
+2024-02-23 12:06:14,699 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 31.977941132999433
+2024-02-23 12:06:28,022 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/esm2_wo_lora/0223-111714/checkpoints/checkpoint-epoch1.pth ...
+2024-02-23 12:06:44,896 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/esm2_wo_lora/0223-111714/checkpoints/model_best.pth
+2024-02-23 12:06:47,659 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [0/10320 (0%)] Loss: 8.799162
+2024-02-23 12:30:50,853 - PROT.PROT.base.base_trainer - INFO - epoch          : 2
+2024-02-23 12:30:50,855 - PROT.PROT.base.base_trainer - INFO - loss           : 8.657356634201088
+2024-02-23 12:30:50,856 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.6725101470947266
+2024-02-23 12:30:50,857 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.7898882031440735
+2024-02-23 12:30:50,858 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.08639322966337204
+2024-02-23 12:30:50,859 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.0
+2024-02-23 12:30:50,861 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.7152090072631836
+2024-02-23 12:30:50,862 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.7070346474647522
+2024-02-23 12:30:50,863 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 19.353086471557617
+2024-02-23 12:30:50,864 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 30.986791610717773
+2024-02-23 12:30:50,865 - PROT.PROT.base.base_trainer - INFO - val_loss       : 8.426544265113634
+2024-02-23 12:30:50,866 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.6835281970976024
+2024-02-23 12:30:50,867 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8045481452202885
+2024-02-23 12:30:50,868 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.3645546700791679
+2024-02-23 12:30:50,870 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.0011633764031515853
+2024-02-23 12:30:50,871 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.7273864260018972
+2024-02-23 12:30:50,872 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.740246374448727
+2024-02-23 12:30:50,873 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 19.355895218374105
+2024-02-23 12:30:50,874 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 29.387631884360225
+2024-02-23 12:31:04,478 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/esm2_wo_lora/0223-111714/checkpoints/checkpoint-epoch2.pth ...
+2024-02-23 12:31:20,580 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/esm2_wo_lora/0223-111714/checkpoints/model_best.pth
+2024-02-23 12:31:23,407 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [0/10320 (0%)] Loss: 8.379384
+2024-02-23 12:55:29,613 - PROT.PROT.base.base_trainer - INFO - epoch          : 3
+2024-02-23 12:55:29,618 - PROT.PROT.base.base_trainer - INFO - loss           : 8.3015195974072
+2024-02-23 12:55:29,619 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.6707726716995239
+2024-02-23 12:55:29,620 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.7950727939605713
+2024-02-23 12:55:29,621 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.5594940185546875
+2024-02-23 12:55:29,623 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.0011918951058760285
+2024-02-23 12:55:29,624 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.722925066947937
+2024-02-23 12:55:29,625 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.7414069175720215
+2024-02-23 12:55:29,626 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 20.097742080688477
+2024-02-23 12:55:29,628 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 31.30203628540039
+2024-02-23 12:55:29,629 - PROT.PROT.base.base_trainer - INFO - val_loss       : 8.152627937908102
+2024-02-23 12:55:29,630 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.6964739147587456
+2024-02-23 12:55:29,631 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8196704546023998
+2024-02-23 12:55:29,632 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.4636466912787779
+2024-02-23 12:55:29,633 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.0029524997399941197
+2024-02-23 12:55:29,634 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.7457523992580681
+2024-02-23 12:55:29,635 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.7603721050098813
+2024-02-23 12:55:29,637 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 18.888827394295443
+2024-02-23 12:55:29,638 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 28.285242316467734
+2024-02-23 12:55:43,051 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/esm2_wo_lora/0223-111714/checkpoints/checkpoint-epoch3.pth ...
+2024-02-23 12:56:03,429 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/esm2_wo_lora/0223-111714/checkpoints/model_best.pth
+2024-02-23 12:56:06,094 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [0/10320 (0%)] Loss: 8.171515
+2024-02-23 13:20:10,479 - PROT.PROT.base.base_trainer - INFO - epoch          : 4
+2024-02-23 13:20:10,482 - PROT.PROT.base.base_trainer - INFO - loss           : 8.078145775220335
+2024-02-23 13:20:10,483 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.6739860773086548
+2024-02-23 13:20:10,485 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8067682981491089
+2024-02-23 13:20:10,486 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.4805516302585602
+2024-02-23 13:20:10,487 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.002166260499507189
+2024-02-23 13:20:10,488 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.7176583409309387
+2024-02-23 13:20:10,489 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.7390319108963013
+2024-02-23 13:20:10,490 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 18.80092430114746
+2024-02-23 13:20:10,491 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 29.30510902404785
+2024-02-23 13:20:10,492 - PROT.PROT.base.base_trainer - INFO - val_loss       : 7.96398083926127
+2024-02-23 13:20:10,493 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7056269535719248
+2024-02-23 13:20:10,494 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8293682730505827
+2024-02-23 13:20:10,495 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.5289219139466866
+2024-02-23 13:20:10,496 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.004949372110766362
+2024-02-23 13:20:10,498 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.7577681046570359
+2024-02-23 13:20:10,499 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.7727843575811914
+2024-02-23 13:20:10,500 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 18.559261508533435
+2024-02-23 13:20:10,501 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 27.661498235160575
+2024-02-23 13:20:25,928 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/esm2_wo_lora/0223-111714/checkpoints/checkpoint-epoch4.pth ...
+2024-02-23 13:20:40,800 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/esm2_wo_lora/0223-111714/checkpoints/model_best.pth
+2024-02-23 13:20:43,808 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [0/10320 (0%)] Loss: 8.019070
+2024-02-23 13:44:45,080 - PROT.PROT.base.base_trainer - INFO - epoch          : 5
+2024-02-23 13:44:45,081 - PROT.PROT.base.base_trainer - INFO - loss           : 7.93108057110559
+2024-02-23 13:44:45,082 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.68309485912323
+2024-02-23 13:44:45,084 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8208796977996826
+2024-02-23 13:44:45,085 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.5727852582931519
+2024-02-23 13:44:45,086 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.002235261257737875
+2024-02-23 13:44:45,087 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.7688071727752686
+2024-02-23 13:44:45,089 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.7752013802528381
+2024-02-23 13:44:45,090 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 22.002262115478516
+2024-02-23 13:44:45,091 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 30.95029067993164
+2024-02-23 13:44:45,092 - PROT.PROT.base.base_trainer - INFO - val_loss       : 7.839676469894353
+2024-02-23 13:44:45,093 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.709561442647033
+2024-02-23 13:44:45,094 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8354469372777481
+2024-02-23 13:44:45,095 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.5493998379065101
+2024-02-23 13:44:45,096 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.005938187161008604
+2024-02-23 13:44:45,098 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.7669390789697091
+2024-02-23 13:44:45,098 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.781870825154315
+2024-02-23 13:44:45,099 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 18.39197951489269
+2024-02-23 13:44:45,101 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 27.296331004463
+2024-02-23 13:45:00,090 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/esm2_wo_lora/0223-111714/checkpoints/checkpoint-epoch5.pth ...
+2024-02-23 13:45:20,708 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/esm2_wo_lora/0223-111714/checkpoints/model_best.pth
+2024-02-23 13:45:23,193 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [0/10320 (0%)] Loss: 8.102116
+2024-02-23 14:09:21,063 - PROT.PROT.base.base_trainer - INFO - epoch          : 6
+2024-02-23 14:09:21,064 - PROT.PROT.base.base_trainer - INFO - loss           : 7.823113277632589
+2024-02-23 14:09:21,065 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7005405426025391
+2024-02-23 14:09:21,067 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.823243260383606
+2024-02-23 14:09:21,068 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.49532046914100647
+2024-02-23 14:09:21,069 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.004687957931309938
+2024-02-23 14:09:21,070 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.7369140386581421
+2024-02-23 14:09:21,071 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.7483891844749451
+2024-02-23 14:09:21,072 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 20.012311935424805
+2024-02-23 14:09:21,073 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 32.42623519897461
+2024-02-23 14:09:21,074 - PROT.PROT.base.base_trainer - INFO - val_loss       : 7.754035625070664
+2024-02-23 14:09:21,075 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7131012320738437
+2024-02-23 14:09:21,076 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8387293873897778
+2024-02-23 14:09:21,077 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.5652932510934633
+2024-02-23 14:09:21,078 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.007147941733641736
+2024-02-23 14:09:21,079 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.7739662498345674
+2024-02-23 14:09:21,080 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.7886706308025275
+2024-02-23 14:09:21,081 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 18.231511198726526
+2024-02-23 14:09:21,082 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 27.012813691283505
+2024-02-23 14:09:34,474 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/esm2_wo_lora/0223-111714/checkpoints/checkpoint-epoch6.pth ...
+2024-02-23 14:09:50,108 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/esm2_wo_lora/0223-111714/checkpoints/model_best.pth
+2024-02-23 14:09:53,770 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [0/10320 (0%)] Loss: 7.950073
+2024-02-23 14:33:52,103 - PROT.PROT.base.base_trainer - INFO - epoch          : 7
+2024-02-23 14:33:52,107 - PROT.PROT.base.base_trainer - INFO - loss           : 7.749187189700325
+2024-02-23 14:33:52,108 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.6573458313941956
+2024-02-23 14:33:52,110 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8001375198364258
+2024-02-23 14:33:52,111 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.7148708701133728
+2024-02-23 14:33:52,112 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.008488964289426804
+2024-02-23 14:33:52,113 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.7231252789497375
+2024-02-23 14:33:52,114 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.7437525987625122
+2024-02-23 14:33:52,115 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 20.314823150634766
+2024-02-23 14:33:52,116 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 30.682064056396484
+2024-02-23 14:33:52,117 - PROT.PROT.base.base_trainer - INFO - val_loss       : 7.695904878672638
+2024-02-23 14:33:52,118 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.714693879839239
+2024-02-23 14:33:52,119 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8406953926016044
+2024-02-23 14:33:52,120 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.5747246282017099
+2024-02-23 14:33:52,121 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.0077277305097803745
+2024-02-23 14:33:52,122 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.7800818192342991
+2024-02-23 14:33:52,123 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.7944511425891045
+2024-02-23 14:33:52,124 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 18.225478327142355
+2024-02-23 14:33:52,126 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 26.87413248716685
+2024-02-23 14:34:05,289 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/esm2_wo_lora/0223-111714/checkpoints/checkpoint-epoch7.pth ...
+2024-02-23 14:34:30,726 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/esm2_wo_lora/0223-111714/checkpoints/model_best.pth
+2024-02-23 14:34:35,009 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [0/10320 (0%)] Loss: 7.863647
+2024-02-23 14:58:34,436 - PROT.PROT.base.base_trainer - INFO - epoch          : 8
+2024-02-23 14:58:34,440 - PROT.PROT.base.base_trainer - INFO - loss           : 7.703202153788292
+2024-02-23 14:58:34,442 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.6757990717887878
+2024-02-23 14:58:34,443 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8214104175567627
+2024-02-23 14:58:34,444 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6974793672561646
+2024-02-23 14:58:34,445 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.00880814716219902
+2024-02-23 14:58:34,447 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.793220043182373
+2024-02-23 14:58:34,448 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.798336386680603
+2024-02-23 14:58:34,449 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 20.30670928955078
+2024-02-23 14:58:34,450 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 30.41470718383789
+2024-02-23 14:58:34,450 - PROT.PROT.base.base_trainer - INFO - val_loss       : 7.644887333866415
+2024-02-23 14:58:34,452 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7174142685983453
+2024-02-23 14:58:34,453 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8434738997383752
+2024-02-23 14:58:34,453 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.5857972742446674
+2024-02-23 14:58:34,454 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.007794205254206702
+2024-02-23 14:58:34,455 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.783044362310114
+2024-02-23 14:58:34,457 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.7976717073539087
+2024-02-23 14:58:34,458 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 18.08551251492377
+2024-02-23 14:58:34,459 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 26.745608013054543
+2024-02-23 14:58:48,126 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/esm2_wo_lora/0223-111714/checkpoints/checkpoint-epoch8.pth ...
+2024-02-23 14:59:09,159 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/esm2_wo_lora/0223-111714/checkpoints/model_best.pth
+2024-02-23 14:59:12,411 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [0/10320 (0%)] Loss: 7.897424
+2024-02-23 15:23:20,073 - PROT.PROT.base.base_trainer - INFO - epoch          : 9
+2024-02-23 15:23:20,077 - PROT.PROT.base.base_trainer - INFO - loss           : 7.667017026847945
+2024-02-23 15:23:20,078 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.6771986484527588
+2024-02-23 15:23:20,079 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8178707957267761
+2024-02-23 15:23:20,080 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6205134391784668
+2024-02-23 15:23:20,081 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.003872633446007967
+2024-02-23 15:23:20,082 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.7586749196052551
+2024-02-23 15:23:20,083 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.7799338102340698
+2024-02-23 15:23:20,084 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 20.300926208496094
+2024-02-23 15:23:20,085 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 29.43405532836914
+2024-02-23 15:23:20,086 - PROT.PROT.base.base_trainer - INFO - val_loss       : 7.620372144938395
+2024-02-23 15:23:20,087 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7187342137868115
+2024-02-23 15:23:20,088 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8450149100864945
+2024-02-23 15:23:20,089 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.5866452304859443
+2024-02-23 15:23:20,091 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.008153627084471917
+2024-02-23 15:23:20,092 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.7832944155619154
+2024-02-23 15:23:20,093 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.7978672555671846
+2024-02-23 15:23:20,094 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 18.046605516623746
+2024-02-23 15:23:20,095 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 26.62042282780158
+2024-02-23 15:23:33,200 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/esm2_wo_lora/0223-111714/checkpoints/checkpoint-epoch9.pth ...
+2024-02-23 15:23:52,078 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/esm2_wo_lora/0223-111714/checkpoints/model_best.pth
+2024-02-23 15:23:54,316 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [0/10320 (0%)] Loss: 8.046201
+2024-02-23 15:48:06,956 - PROT.PROT.base.base_trainer - INFO - epoch          : 10
+2024-02-23 15:48:06,960 - PROT.PROT.base.base_trainer - INFO - loss           : 7.641618752882084
+2024-02-23 15:48:06,961 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.6816960573196411
+2024-02-23 15:48:06,962 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.811286985874176
+2024-02-23 15:48:06,964 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6330950856208801
+2024-02-23 15:48:06,965 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.009967845864593983
+2024-02-23 15:48:06,966 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.7348002195358276
+2024-02-23 15:48:06,967 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.7391095161437988
+2024-02-23 15:48:06,968 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 20.32541847229004
+2024-02-23 15:48:06,970 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 30.414180755615234
+2024-02-23 15:48:06,971 - PROT.PROT.base.base_trainer - INFO - val_loss       : 7.607672713339548
+2024-02-23 15:48:06,972 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.718431808411855
+2024-02-23 15:48:06,973 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8451627468710896
+2024-02-23 15:48:06,974 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.5912654752880885
+2024-02-23 15:48:06,975 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.00796420397872717
+2024-02-23 15:48:06,976 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.7863106866164401
+2024-02-23 15:48:06,978 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8003063936515048
+2024-02-23 15:48:06,979 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 18.055246757845158
+2024-02-23 15:48:06,980 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 26.714466404650924
+2024-02-23 15:48:20,153 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/esm2_wo_lora/0223-111714/checkpoints/checkpoint-epoch10.pth ...
+2024-02-23 15:48:38,156 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/esm2_wo_lora/0223-111714/checkpoints/model_best.pth
+2024-02-23 15:48:40,415 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [0/10320 (0%)] Loss: 7.291695
+2024-02-23 16:12:48,135 - PROT.PROT.base.base_trainer - INFO - epoch          : 11
+2024-02-23 16:12:48,136 - PROT.PROT.base.base_trainer - INFO - loss           : 7.623662263473076
+2024-02-23 16:12:48,137 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7456868886947632
+2024-02-23 16:12:48,138 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8623002767562866
+2024-02-23 16:12:48,140 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.7265616059303284
+2024-02-23 16:12:48,141 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.006101694889366627
+2024-02-23 16:12:48,142 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8169325590133667
+2024-02-23 16:12:48,143 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8319424390792847
+2024-02-23 16:12:48,144 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 18.026042938232422
+2024-02-23 16:12:48,146 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 24.679264068603516
+2024-02-23 16:12:48,147 - PROT.PROT.base.base_trainer - INFO - val_loss       : 7.580597915332696
+2024-02-23 16:12:48,148 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7199938218092127
+2024-02-23 16:12:48,149 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8469071660974369
+2024-02-23 16:12:48,150 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.5954019560365219
+2024-02-23 16:12:48,151 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.008339730206949163
+2024-02-23 16:12:48,152 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.7879370774290219
+2024-02-23 16:12:48,154 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8018322426454607
+2024-02-23 16:12:48,155 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 18.00363503874888
+2024-02-23 16:12:48,156 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 26.588468597383958
+2024-02-23 16:13:00,886 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/esm2_wo_lora/0223-111714/checkpoints/checkpoint-epoch11.pth ...
+2024-02-23 16:13:19,415 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/esm2_wo_lora/0223-111714/checkpoints/model_best.pth
+2024-02-23 16:13:21,990 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [0/10320 (0%)] Loss: 7.610790
+2024-02-23 16:37:33,922 - PROT.PROT.base.base_trainer - INFO - epoch          : 12
+2024-02-23 16:37:33,940 - PROT.PROT.base.base_trainer - INFO - loss           : 7.606720045194472
+2024-02-23 16:37:33,941 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7308306694030762
+2024-02-23 16:37:33,942 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8533013463020325
+2024-02-23 16:37:33,943 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6001736521720886
+2024-02-23 16:37:33,944 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.013686662539839745
+2024-02-23 16:37:33,945 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.7783999443054199
+2024-02-23 16:37:33,946 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.7941152453422546
+2024-02-23 16:37:33,947 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 17.84687614440918
+2024-02-23 16:37:33,949 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 26.250568389892578
+2024-02-23 16:37:33,950 - PROT.PROT.base.base_trainer - INFO - val_loss       : 7.579323672720427
+2024-02-23 16:37:33,951 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7192673855822025
+2024-02-23 16:37:33,952 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8467250450950707
+2024-02-23 16:37:33,953 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.5955561105079427
+2024-02-23 16:37:33,954 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.007855331886051106
+2024-02-23 16:37:33,955 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.7888073923403046
+2024-02-23 16:37:33,956 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8028635708168423
+2024-02-23 16:37:33,957 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 18.01640581644769
+2024-02-23 16:37:33,958 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 26.667160291073507
+2024-02-23 16:37:47,906 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/esm2_wo_lora/0223-111714/checkpoints/checkpoint-epoch12.pth ...
+2024-02-23 16:38:08,427 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/esm2_wo_lora/0223-111714/checkpoints/model_best.pth
+2024-02-23 16:38:11,615 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [0/10320 (0%)] Loss: 7.702774
+2024-02-23 17:02:16,767 - PROT.PROT.base.base_trainer - INFO - epoch          : 13
+2024-02-23 17:02:16,770 - PROT.PROT.base.base_trainer - INFO - loss           : 7.593743348848049
+2024-02-23 17:02:16,772 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7094274163246155
+2024-02-23 17:02:16,773 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8339585065841675
+2024-02-23 17:02:16,774 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.5650309920310974
+2024-02-23 17:02:16,775 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.008809396997094154
+2024-02-23 17:02:16,776 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.7878326177597046
+2024-02-23 17:02:16,777 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.7987293004989624
+2024-02-23 17:02:16,778 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 20.188425064086914
+2024-02-23 17:02:16,779 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 29.57743263244629
+2024-02-23 17:02:16,780 - PROT.PROT.base.base_trainer - INFO - val_loss       : 7.5590853620719205
+2024-02-23 17:02:16,781 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7203643053660094
+2024-02-23 17:02:16,782 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8471648330178208
+2024-02-23 17:02:16,783 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6018153356999929
+2024-02-23 17:02:16,784 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.008277783854013976
+2024-02-23 17:02:16,785 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.7896766085246393
+2024-02-23 17:02:16,786 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8036200151232336
+2024-02-23 17:02:16,787 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 18.013745914965977
+2024-02-23 17:02:16,788 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 26.631668865020863
+2024-02-23 17:02:31,638 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/esm2_wo_lora/0223-111714/checkpoints/checkpoint-epoch13.pth ...
+2024-02-23 17:02:45,919 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/esm2_wo_lora/0223-111714/checkpoints/model_best.pth
+2024-02-23 17:02:49,860 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [0/10320 (0%)] Loss: 7.421914
+2024-02-23 17:27:04,413 - PROT.PROT.base.base_trainer - INFO - epoch          : 14
+2024-02-23 17:27:04,415 - PROT.PROT.base.base_trainer - INFO - loss           : 7.591503776625802
+2024-02-23 17:27:04,416 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7074491381645203
+2024-02-23 17:27:04,418 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8423560261726379
+2024-02-23 17:27:04,420 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6727253794670105
+2024-02-23 17:27:04,421 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.010421386919915676
+2024-02-23 17:27:04,423 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8008554577827454
+2024-02-23 17:27:04,424 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8145033121109009
+2024-02-23 17:27:04,425 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 18.316808700561523
+2024-02-23 17:27:04,426 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 26.33049964904785
+2024-02-23 17:27:04,428 - PROT.PROT.base.base_trainer - INFO - val_loss       : 7.5625637853277565
+2024-02-23 17:27:04,429 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7188787690167937
+2024-02-23 17:27:04,430 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8473590042758252
+2024-02-23 17:27:04,431 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.602315791913504
+2024-02-23 17:27:04,432 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.00851899115033654
+2024-02-23 17:27:04,433 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.7901349169961641
+2024-02-23 17:27:04,434 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8042710084756802
+2024-02-23 17:27:04,435 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 18.09100762680448
+2024-02-23 17:27:04,437 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 26.715559945335247
+2024-02-23 17:27:17,628 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/esm2_wo_lora/0223-111714/checkpoints/checkpoint-epoch14.pth ...
+2024-02-23 17:27:17,927 - PROT.PROT.main - INFO - Initialising evaluation
+2024-02-23 17:27:18,847 - PROT.PROT.base.base_eval - INFO - Starting evaluating...
+2024-02-23 17:27:24,324 - PROT.PROT.base.base_eval - INFO - metric_ss8: 0.6527664491108486
+2024-02-23 17:27:24,325 - PROT.PROT.base.base_eval - INFO - metric_ss3: 0.7851543341364179
+2024-02-23 17:27:24,326 - PROT.PROT.base.base_eval - INFO - metric_dis_mcc: 0.5426983748163495
+2024-02-23 17:27:24,327 - PROT.PROT.base.base_eval - INFO - metric_dis_fnr: 0.013054506653653724
+2024-02-23 17:27:24,328 - PROT.PROT.base.base_eval - INFO - metric_rsa: 0.7100959420204163
+2024-02-23 17:27:24,330 - PROT.PROT.base.base_eval - INFO - metric_asa: 0.7174205609730312
+2024-02-23 17:27:24,331 - PROT.PROT.base.base_eval - INFO - metric_phi: 21.49431800842285
+2024-02-23 17:27:24,332 - PROT.PROT.base.base_eval - INFO - metric_psi: 33.48126329694475
+2024-02-23 17:27:25,339 - PROT.PROT.base.base_eval - INFO - Starting evaluating...
+2024-02-23 17:28:31,776 - PROT.PROT.base.base_eval - INFO - metric_ss8: 0.6815333972897446
+2024-02-23 17:28:31,780 - PROT.PROT.base.base_eval - INFO - metric_ss3: 0.8360331821859929
+2024-02-23 17:28:31,781 - PROT.PROT.base.base_eval - INFO - metric_dis_mcc: 0.05962404778532299
+2024-02-23 17:28:31,782 - PROT.PROT.base.base_eval - INFO - metric_dis_fnr: 0.007116180110711887
+2024-02-23 17:28:31,784 - PROT.PROT.base.base_eval - INFO - metric_rsa: 0.7905396435692994
+2024-02-23 17:28:31,785 - PROT.PROT.base.base_eval - INFO - metric_asa: 0.8039691782834237
+2024-02-23 17:28:31,786 - PROT.PROT.base.base_eval - INFO - metric_phi: 20.75716610958702
+2024-02-23 17:28:31,787 - PROT.PROT.base.base_eval - INFO - metric_psi: 30.27603163914374
+2024-02-23 17:28:32,701 - PROT.PROT.base.base_eval - INFO - Starting evaluating...
+2024-02-23 17:28:50,404 - PROT.PROT.base.base_eval - INFO - metric_ss8: 0.7189899372017902
+2024-02-23 17:28:50,405 - PROT.PROT.base.base_eval - INFO - metric_ss3: 0.843827908453734
+2024-02-23 17:28:50,406 - PROT.PROT.base.base_eval - INFO - metric_dis_mcc: 0.6054524235103441
+2024-02-23 17:28:50,407 - PROT.PROT.base.base_eval - INFO - metric_dis_fnr: 0.012835655401906242
+2024-02-23 17:28:50,409 - PROT.PROT.base.base_eval - INFO - metric_rsa: 0.7722308843032174
+2024-02-23 17:28:50,410 - PROT.PROT.base.base_eval - INFO - metric_asa: 0.7899290193682131
+2024-02-23 17:28:50,411 - PROT.PROT.base.base_eval - INFO - metric_phi: 17.76333079130753
+2024-02-23 17:28:50,412 - PROT.PROT.base.base_eval - INFO - metric_psi: 26.99705878548
+2024-02-23 17:28:50,414 - PROT.PROT.main - INFO - Finished!
+done

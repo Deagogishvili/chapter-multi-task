@@ -11,14 +11,14 @@ from PROT.embedding import ESM2Embedding
 log = setup_logger(__name__)
 
 
-class ESM2_original(ModelBase):
+class ESM2_multitask(ModelBase):
     def __init__(self, init_n_channels: int, embedding_pretrained: str, **kwargs):
         """ Constructor
         Args:
             in_features: size of the embedding features
             language_model: path to the language model weights
         """
-        super(ESM2_original, self).__init__()
+        super(ESM2_multitask, self).__init__()
 
         self.embedding = ESM2Embedding(embedding_pretrained=embedding_pretrained, **kwargs)
 
@@ -63,12 +63,12 @@ class ESM2_original(ModelBase):
             nn.Linear(in_features=init_n_channels, out_features=10),
         ])
         self.expression = nn.Sequential(*[
-            nn.Linear(in_features=init_n_channels, out_features=10),
+            nn.Linear(in_features=init_n_channels, out_features=2),
         ])
 
         log.info(f'<init>: \n{self}')
 
-    def parameters(self, recurse: bool = True, print: bool = False) -> list:
+    def parameters(self, recurse: bool = True, print: bool = True) -> list:
         """ Returns the parameters to learn """
         if print:
             log.info("Params to learn:")
@@ -81,7 +81,7 @@ class ESM2_original(ModelBase):
     def forward(self, x: torch.tensor, mask: torch.tensor) -> torch.tensor:
         """ Forwarding logic """
 
-        x = self.embedding(x, max(mask))
+        x = self.embedding(x, torch.max(mask))
 
         # hidden neurons to classes
         ss8 = self.ss8(x)

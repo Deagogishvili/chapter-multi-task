@@ -6,8 +6,8 @@ Processing /scistor/informatica/dgi460/PROT/PROT
 Building wheels for collected packages: PROT
   Building wheel for PROT (setup.py): started
   Building wheel for PROT (setup.py): finished with status 'done'
-  Created wheel for PROT: filename=PROT-0.0.1-py3-none-any.whl size=116825 sha256=93577df5db0f22a83487c4ec76b0a7742dc825e6f9d83ea00736085f811961b0
-  Stored in directory: /scratch/692231/pip-ephem-wheel-cache-bglbpozj/wheels/f3/f3/d5/e95d019bbe728e863c8658a0c362e103b5264b28afecea62b9
+  Created wheel for PROT: filename=PROT-0.0.1-py3-none-any.whl size=119765 sha256=1f2de1bdec6844a7c11a1091a9ae9a2978275b5ed369b75da1cadde9be1d8686
+  Stored in directory: /scratch/696234/pip-ephem-wheel-cache-1vj2eg5l/wheels/f3/f3/d5/e95d019bbe728e863c8658a0c362e103b5264b28afecea62b9
 Successfully built PROT
 Installing collected packages: PROT
   Attempting uninstall: PROT
@@ -15,10 +15,10 @@ Installing collected packages: PROT
     Uninstalling PROT-0.0.1:
       Successfully uninstalled PROT-0.0.1
 Successfully installed PROT-0.0.1
-2024-03-23 16:00:00,544 - PROT.PROT.main - INFO - Building: PROT.models.ESM2_original_extended
+2024-04-06 08:40:50,598 - PROT.PROT.main - INFO - Building: PROT.models.ESM2_original_extended
 FINETUNING CHOSEN: LoRA
 Gradient Checkpointing 2
-2024-03-23 16:00:08,133 - PROT.PROT.models.ESM2_original_extended.model - INFO - <init>: 
+2024-04-06 08:41:08,326 - PROT.PROT.models.ESM2_original_extended.model - INFO - <init>: 
 ESM2_original_extended(
   (embedding): ESM2Embedding(
     (model): ESM2(
@@ -692,827 +692,827 @@ ESM2_original_extended(
   )
 )
 Trainable parameters: 61504231
-2024-03-23 16:00:08,195 - PROT.PROT.main - INFO - Using devices [0] of available devices [0]
+2024-04-06 08:41:08,336 - PROT.PROT.main - INFO - Using devices [0] of available devices [0]
 Using devices [0] of available devices [0]
-2024-03-23 16:00:09,727 - PROT.PROT.main - INFO - Building: torch.optim.Adam
-2024-03-23 16:00:09,730 - PROT.PROT.main - INFO - Building: PROT.data_loader.augmentation.sparse_token
+2024-04-06 08:41:18,878 - PROT.PROT.main - INFO - Building: torch.optim.Adam
+2024-04-06 08:41:18,880 - PROT.PROT.main - INFO - Building: PROT.data_loader.augmentation.sparse_token
 FINETUNING CHOSEN: no finetuning
 Gradient Checkpointing None
-2024-03-23 16:00:11,206 - PROT.PROT.main - INFO - Building: PROT.data_loader.data_loaders.NSPDataLoader
-2024-03-23 16:04:51,166 - PROT.PROT.main - INFO - Getting loss and metric function handles
-2024-03-23 16:04:51,167 - PROT.PROT.main - INFO - Initialising trainer
+2024-04-06 08:41:25,315 - PROT.PROT.main - INFO - Building: PROT.data_loader.data_loaders.NSPDataLoader
+2024-04-06 08:46:02,818 - PROT.PROT.main - INFO - Getting loss and metric function handles
+2024-04-06 08:46:02,820 - PROT.PROT.main - INFO - Initialising trainer
 GRADIENT ACCUMULATION 6
-2024-03-23 16:04:51,179 - PROT.PROT.base.base_trainer - INFO - Starting training...
-2024-03-23 16:04:55,316 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [0/10308 (0%)] Loss: 32.823898
-2024-03-23 16:09:21,208 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [900/10308 (9%)] Loss: 32.760109
-2024-03-23 16:13:42,110 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [1800/10308 (17%)] Loss: 15.900972
-2024-03-23 16:18:03,759 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [2700/10308 (26%)] Loss: 18.142153
-2024-03-23 16:22:31,433 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [3600/10308 (35%)] Loss: 15.107373
-2024-03-23 16:26:53,358 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [4500/10308 (44%)] Loss: 14.762275
-2024-03-23 16:31:14,001 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [5400/10308 (52%)] Loss: 15.325136
-2024-03-23 16:35:39,442 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [6300/10308 (61%)] Loss: 18.923500
-2024-03-23 16:40:01,060 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [7200/10308 (70%)] Loss: 11.851613
-2024-03-23 16:44:28,132 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [8100/10308 (79%)] Loss: 14.292801
-2024-03-23 16:48:46,957 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [9000/10308 (87%)] Loss: 13.746521
-2024-03-23 16:53:10,108 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [9900/10308 (96%)] Loss: 11.915582
-2024-03-23 16:56:40,520 - PROT.PROT.base.base_trainer - INFO - epoch          : 0
-2024-03-23 16:56:40,522 - PROT.PROT.base.base_trainer - INFO - loss           : 17.614867553603595
-2024-03-23 16:56:40,523 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.6407276646544536
-2024-03-23 16:56:40,524 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.7888759225606918
-2024-03-23 16:56:40,526 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.3986903458523254
-2024-03-23 16:56:40,527 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.04652384146659946
-2024-03-23 16:56:40,528 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.6795457932942858
-2024-03-23 16:56:40,530 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.7109236605465412
-2024-03-23 16:56:40,531 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 28.06611657142639
-2024-03-23 16:56:40,532 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 38.92426188786825
-2024-03-23 16:56:40,533 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 3609.9167277018228
-2024-03-23 16:56:40,534 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 657.2521197001139
-2024-03-23 16:56:40,535 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 558.6400019327799
-2024-03-23 16:56:40,537 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.700984361426284
-2024-03-23 16:56:40,538 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.18549204772959152
-2024-03-23 16:56:40,539 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.35459229288001853
-2024-03-23 16:56:40,540 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.20901898046334585
-2024-03-23 16:56:40,541 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.5555555555555556
-2024-03-23 16:56:40,542 - PROT.PROT.base.base_trainer - INFO - metric_expression: 1.0
-2024-03-23 16:56:40,543 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.94616053817017
-2024-03-23 16:56:40,544 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7326622900597723
-2024-03-23 16:56:40,546 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8607673268916423
-2024-03-23 16:56:40,547 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.5814008206542327
-2024-03-23 16:56:40,548 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.008446362156530917
-2024-03-23 16:56:40,549 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8002713831808295
-2024-03-23 16:56:40,550 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8140863096582054
-2024-03-23 16:56:40,551 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 18.133121115695065
-2024-03-23 16:56:40,552 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 25.76540626722948
-2024-03-23 16:56:40,553 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 1250.6010231918954
-2024-03-23 16:56:40,554 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 494.11107437724996
-2024-03-23 16:56:40,556 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 443.2348015704278
-2024-03-23 16:56:40,557 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8592971864661607
-2024-03-23 16:56:40,558 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.053774499115310744
-2024-03-23 16:56:40,559 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.4555327900551342
-2024-03-23 16:56:40,560 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.05151974937339
-2024-03-23 16:56:40,561 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.5466101705017736
-2024-03-23 16:56:40,562 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.4807692307692308
-2024-03-23 16:56:58,213 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0323-160451/checkpoints/checkpoint-epoch0.pth ...
-2024-03-23 16:57:25,266 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/patchprot_wo_agg/0323-160451/checkpoints/model_best.pth
-2024-03-23 16:57:29,269 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [0/10308 (0%)] Loss: 14.321537
-2024-03-23 17:01:49,601 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [900/10308 (9%)] Loss: 11.541229
-2024-03-23 17:06:08,310 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [1800/10308 (17%)] Loss: 12.208655
-2024-03-23 17:10:35,415 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [2700/10308 (26%)] Loss: 13.133161
-2024-03-23 17:15:00,831 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [3600/10308 (35%)] Loss: 14.281300
-2024-03-23 17:19:31,111 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [4500/10308 (44%)] Loss: 12.975142
-2024-03-23 17:23:39,474 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [5400/10308 (52%)] Loss: 16.515747
-2024-03-23 17:28:09,375 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [6300/10308 (61%)] Loss: 22.142014
-2024-03-23 17:32:38,624 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [7200/10308 (70%)] Loss: 12.726451
-2024-03-23 17:37:05,790 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [8100/10308 (79%)] Loss: 22.018368
-2024-03-23 17:41:33,781 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [9000/10308 (87%)] Loss: 14.042627
-2024-03-23 17:45:52,949 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [9900/10308 (96%)] Loss: 13.442348
-2024-03-23 17:49:10,141 - PROT.PROT.base.base_trainer - INFO - epoch          : 1
-2024-03-23 17:49:10,142 - PROT.PROT.base.base_trainer - INFO - loss           : 13.95036312845779
-2024-03-23 17:49:10,143 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7137962182362875
-2024-03-23 17:49:10,144 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8420279721419016
-2024-03-23 17:49:10,146 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.5996959827995548
-2024-03-23 17:49:10,147 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.008559286458572993
-2024-03-23 17:49:10,148 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.7682386636734009
-2024-03-23 17:49:10,149 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.7841271708408991
-2024-03-23 17:49:10,151 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 18.229103485743206
-2024-03-23 17:49:10,152 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 27.856215238571167
-2024-03-23 17:49:10,153 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 1477.0705006917317
-2024-03-23 17:49:10,154 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 505.411558787028
-2024-03-23 17:49:10,155 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 336.22264734903973
-2024-03-23 17:49:10,156 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8540752430756887
-2024-03-23 17:49:10,157 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.07947759904588263
-2024-03-23 17:49:10,159 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.4238315795858701
-2024-03-23 17:49:10,160 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.07971982766563694
-2024-03-23 17:49:10,161 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.6111111111111112
-2024-03-23 17:49:10,162 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.5
-2024-03-23 17:49:10,163 - PROT.PROT.base.base_trainer - INFO - val_loss       : 14.104029583315128
-2024-03-23 17:49:10,164 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7464932881818046
-2024-03-23 17:49:10,165 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8682979438797575
-2024-03-23 17:49:10,166 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.5930977851458279
-2024-03-23 17:49:10,167 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.01038430014760938
-2024-03-23 17:49:10,168 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.808339629995867
-2024-03-23 17:49:10,169 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8219991648549083
-2024-03-23 17:49:10,170 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.768541436353733
-2024-03-23 17:49:10,171 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 23.987724173992763
-2024-03-23 17:49:10,172 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 1043.322172312719
-2024-03-23 17:49:10,173 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 487.5646456757155
-2024-03-23 17:49:10,174 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 474.62462556846026
-2024-03-23 17:49:10,175 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8640039369657442
-2024-03-23 17:49:10,176 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.05667203519638483
-2024-03-23 17:49:10,177 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.46093213696426716
-2024-03-23 17:49:10,178 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.057038004401248774
-2024-03-23 17:49:10,179 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.3622994654000124
-2024-03-23 17:49:10,180 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.4807692307692308
-2024-03-23 17:49:27,930 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0323-160451/checkpoints/checkpoint-epoch1.pth ...
-2024-03-23 17:49:30,271 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [0/10308 (0%)] Loss: 14.802216
-2024-03-23 17:53:50,163 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [900/10308 (9%)] Loss: 11.727432
-2024-03-23 17:58:07,144 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [1800/10308 (17%)] Loss: 11.184096
-2024-03-23 18:02:37,068 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [2700/10308 (26%)] Loss: 11.836221
-2024-03-23 18:06:58,863 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [3600/10308 (35%)] Loss: 16.046432
-2024-03-23 18:11:22,221 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [4500/10308 (44%)] Loss: 13.489238
-2024-03-23 18:16:01,827 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [5400/10308 (52%)] Loss: 11.826749
-2024-03-23 18:20:27,585 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [6300/10308 (61%)] Loss: 11.571285
-2024-03-23 18:24:56,636 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [7200/10308 (70%)] Loss: 12.342381
-2024-03-23 18:29:24,129 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [8100/10308 (79%)] Loss: 12.320686
-2024-03-23 18:33:39,416 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [9000/10308 (87%)] Loss: 16.550133
-2024-03-23 18:37:57,511 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [9900/10308 (96%)] Loss: 12.616823
-2024-03-23 18:41:21,004 - PROT.PROT.base.base_trainer - INFO - epoch          : 2
-2024-03-23 18:41:21,006 - PROT.PROT.base.base_trainer - INFO - loss           : 13.504321098235101
-2024-03-23 18:41:21,007 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.746830071012179
-2024-03-23 18:41:21,008 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8746796548366547
-2024-03-23 18:41:21,009 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.554270567993323
-2024-03-23 18:41:21,010 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.013415057910606265
-2024-03-23 18:41:21,011 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8037790755430857
-2024-03-23 18:41:21,013 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8184342930714289
-2024-03-23 18:41:21,014 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 16.791914383570354
-2024-03-23 18:41:21,015 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 23.304194927215576
-2024-03-23 18:41:21,016 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 1057.6976776123047
-2024-03-23 18:41:21,017 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 496.5235455830892
-2024-03-23 18:41:21,018 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 454.8934377034505
-2024-03-23 18:41:21,019 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8542152692874273
-2024-03-23 18:41:21,020 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.0833249402542909
-2024-03-23 18:41:21,021 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.44616678605477017
-2024-03-23 18:41:21,022 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.08770945357779662
-2024-03-23 18:41:21,023 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.6875
-2024-03-23 18:41:21,024 - PROT.PROT.base.base_trainer - INFO - metric_expression: 1.0
-2024-03-23 18:41:21,026 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.433710166888924
-2024-03-23 18:41:21,027 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7539822871614646
-2024-03-23 18:41:21,028 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8706493068665156
-2024-03-23 18:41:21,029 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6195940723637552
-2024-03-23 18:41:21,030 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.015138182876291392
-2024-03-23 18:41:21,031 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8145786164211611
-2024-03-23 18:41:21,032 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8284448794333258
-2024-03-23 18:41:21,033 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.471628090552297
-2024-03-23 18:41:21,034 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 23.347809849629982
-2024-03-23 18:41:21,035 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 945.901779188881
-2024-03-23 18:41:21,036 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 432.0862490101494
-2024-03-23 18:41:21,037 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 415.1504254288339
-2024-03-23 18:41:21,038 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8596994781736078
-2024-03-23 18:41:21,039 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.07436984822642044
-2024-03-23 18:41:21,040 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.45905893700149225
-2024-03-23 18:41:21,042 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.06800872982201266
-2024-03-23 18:41:21,043 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.4573333337306976
-2024-03-23 18:41:21,044 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.5925925925925926
-2024-03-23 18:41:41,824 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0323-160451/checkpoints/checkpoint-epoch2.pth ...
-2024-03-23 18:42:13,511 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/patchprot_wo_agg/0323-160451/checkpoints/model_best.pth
-2024-03-23 18:42:16,106 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [0/10308 (0%)] Loss: 12.931817
-2024-03-23 18:46:39,407 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [900/10308 (9%)] Loss: 12.669789
-2024-03-23 18:51:06,045 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [1800/10308 (17%)] Loss: 11.644331
-2024-03-23 18:55:41,442 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [2700/10308 (26%)] Loss: 12.152063
-2024-03-23 19:00:13,829 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [3600/10308 (35%)] Loss: 12.466377
-2024-03-23 19:04:30,720 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [4500/10308 (44%)] Loss: 12.675451
-2024-03-23 19:08:52,045 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [5400/10308 (52%)] Loss: 14.038130
-2024-03-23 19:13:12,532 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [6300/10308 (61%)] Loss: 12.557985
-2024-03-23 19:17:34,668 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [7200/10308 (70%)] Loss: 11.044575
-2024-03-23 19:21:56,940 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [8100/10308 (79%)] Loss: 9.726851
-2024-03-23 19:26:09,318 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [9000/10308 (87%)] Loss: 11.565064
-2024-03-23 19:30:33,840 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [9900/10308 (96%)] Loss: 12.266567
-2024-03-23 19:33:53,802 - PROT.PROT.base.base_trainer - INFO - epoch          : 3
-2024-03-23 19:33:53,803 - PROT.PROT.base.base_trainer - INFO - loss           : 13.279426451171691
-2024-03-23 19:33:53,804 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7906739016373953
-2024-03-23 19:33:53,806 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.892984097202619
-2024-03-23 19:33:53,807 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.561830016473929
-2024-03-23 19:33:53,808 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.01300311969437947
-2024-03-23 19:33:53,810 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8393318057060242
-2024-03-23 19:33:53,811 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.854848767320315
-2024-03-23 19:33:53,812 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 15.527345895767212
-2024-03-23 19:33:53,813 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 20.49709741274516
-2024-03-23 19:33:53,814 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 626.1223093668619
-2024-03-23 19:33:53,815 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 210.52344799041748
-2024-03-23 19:33:53,817 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 286.79304122924805
-2024-03-23 19:33:53,818 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8797692507505417
-2024-03-23 19:33:53,819 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.06253241654485464
-2024-03-23 19:33:53,820 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.46086300661166507
-2024-03-23 19:33:53,822 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.06052126440530022
-2024-03-23 19:33:53,823 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.22727272727272727
-2024-03-23 19:33:53,824 - PROT.PROT.base.base_trainer - INFO - metric_expression: 1.0
-2024-03-23 19:33:53,825 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.508655312316444
-2024-03-23 19:33:53,827 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7611705569543522
-2024-03-23 19:33:53,828 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8710288711139637
-2024-03-23 19:33:53,829 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6102666384289956
-2024-03-23 19:33:53,830 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.008852244923222034
-2024-03-23 19:33:53,832 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8160793014777983
-2024-03-23 19:33:53,833 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8289978141274399
-2024-03-23 19:33:53,834 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.47777025286122
-2024-03-23 19:33:53,835 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 23.102852464162115
-2024-03-23 19:33:53,836 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 947.0845223599255
-2024-03-23 19:33:53,837 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 443.8360046161497
-2024-03-23 19:33:53,838 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 441.6328666095804
-2024-03-23 19:33:53,839 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8638034907475474
-2024-03-23 19:33:53,840 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.06699732361976507
-2024-03-23 19:33:53,842 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.453160526690545
-2024-03-23 19:33:53,843 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.0664645785514217
-2024-03-23 19:33:53,844 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.4352331610850102
-2024-03-23 19:33:53,845 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.7115384615384616
-2024-03-23 19:34:11,726 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0323-160451/checkpoints/checkpoint-epoch3.pth ...
-2024-03-23 19:34:14,878 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [0/10308 (0%)] Loss: 10.714631
-2024-03-23 19:38:28,510 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [900/10308 (9%)] Loss: 13.088735
-2024-03-23 19:42:53,679 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [1800/10308 (17%)] Loss: 11.673777
-2024-03-23 19:47:24,736 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [2700/10308 (26%)] Loss: 13.209462
-2024-03-23 19:51:49,266 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [3600/10308 (35%)] Loss: 13.527570
-2024-03-23 19:56:13,336 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [4500/10308 (44%)] Loss: 12.903687
-2024-03-23 20:00:26,320 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [5400/10308 (52%)] Loss: 12.988998
-2024-03-23 20:04:54,775 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [6300/10308 (61%)] Loss: 12.930911
-2024-03-23 20:09:06,333 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [7200/10308 (70%)] Loss: 10.619267
-2024-03-23 20:13:40,368 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [8100/10308 (79%)] Loss: 13.622644
-2024-03-23 20:18:01,693 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [9000/10308 (87%)] Loss: 14.005064
-2024-03-23 20:22:24,352 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [9900/10308 (96%)] Loss: 10.346348
-2024-03-23 20:25:36,821 - PROT.PROT.base.base_trainer - INFO - epoch          : 4
-2024-03-23 20:25:36,822 - PROT.PROT.base.base_trainer - INFO - loss           : 13.052462861904838
-2024-03-23 20:25:36,825 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.751717875401179
-2024-03-23 20:25:36,828 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8655044486125311
-2024-03-23 20:25:36,829 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.5976272008635781
-2024-03-23 20:25:36,831 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.007628769904840738
-2024-03-23 20:25:36,834 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8156051834424337
-2024-03-23 20:25:36,835 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8252213398615519
-2024-03-23 20:25:36,837 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 17.823726733525593
-2024-03-23 20:25:36,839 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 24.764708360036213
-2024-03-23 20:25:36,840 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 588.4884014129639
-2024-03-23 20:25:36,842 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 382.603284517924
-2024-03-23 20:25:36,844 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 298.01426760355633
-2024-03-23 20:25:36,846 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8665046940247217
-2024-03-23 20:25:36,848 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.08574699113766353
-2024-03-23 20:25:36,850 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.4174308081467946
-2024-03-23 20:25:36,851 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.08092672424390912
-2024-03-23 20:25:36,852 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.4166666666666667
-2024-03-23 20:25:36,853 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.3333333333333333
-2024-03-23 20:25:36,854 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.387744917640827
-2024-03-23 20:25:36,855 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.763429165766248
-2024-03-23 20:25:36,856 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8740466724242671
-2024-03-23 20:25:36,857 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6247578526467319
-2024-03-23 20:25:36,858 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.012570052776903231
-2024-03-23 20:25:36,859 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8181955111642605
-2024-03-23 20:25:36,861 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.83048739237539
-2024-03-23 20:25:36,862 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.268303353848054
-2024-03-23 20:25:36,863 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.691696346465953
-2024-03-23 20:25:36,864 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 975.2759826209713
-2024-03-23 20:25:36,865 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 453.28201004323927
-2024-03-23 20:25:36,866 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 500.6430235155394
-2024-03-23 20:25:36,867 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8674925156624994
-2024-03-23 20:25:36,868 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.058342966651440877
-2024-03-23 20:25:36,869 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.4597775492391023
-2024-03-23 20:25:36,870 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.05777740458239598
-2024-03-23 20:25:36,871 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.47843665808358926
-2024-03-23 20:25:36,872 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.48148148148148145
-2024-03-23 20:25:54,387 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0323-160451/checkpoints/checkpoint-epoch4.pth ...
-2024-03-23 20:26:12,597 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/patchprot_wo_agg/0323-160451/checkpoints/model_best.pth
-2024-03-23 20:26:14,839 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [0/10308 (0%)] Loss: 11.925814
-2024-03-23 20:30:38,662 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [900/10308 (9%)] Loss: 14.089803
-2024-03-23 20:34:55,602 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [1800/10308 (17%)] Loss: 14.633054
-2024-03-23 20:39:22,584 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [2700/10308 (26%)] Loss: 15.562094
-2024-03-23 20:43:57,472 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [3600/10308 (35%)] Loss: 11.734270
-2024-03-23 20:48:30,170 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [4500/10308 (44%)] Loss: 11.870771
-2024-03-23 20:52:55,329 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [5400/10308 (52%)] Loss: 11.256780
-2024-03-23 20:57:24,170 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [6300/10308 (61%)] Loss: 13.017120
-2024-03-23 21:01:44,897 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [7200/10308 (70%)] Loss: 13.797440
-2024-03-23 21:06:08,970 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [8100/10308 (79%)] Loss: 11.932012
-2024-03-23 21:10:20,371 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [9000/10308 (87%)] Loss: 11.214128
-2024-03-23 21:14:40,201 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [9900/10308 (96%)] Loss: 11.860550
-2024-03-23 21:17:58,371 - PROT.PROT.base.base_trainer - INFO - epoch          : 5
-2024-03-23 21:17:58,372 - PROT.PROT.base.base_trainer - INFO - loss           : 12.890353933575314
-2024-03-23 21:17:58,374 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.8011488169431686
-2024-03-23 21:17:58,375 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8916822224855423
-2024-03-23 21:17:58,376 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6450814753770828
-2024-03-23 21:17:58,377 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.009559230975961933
-2024-03-23 21:17:58,379 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8134446342786154
-2024-03-23 21:17:58,380 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8226011395454407
-2024-03-23 21:17:58,381 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 14.61668030420939
-2024-03-23 21:17:58,382 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 20.828649044036865
-2024-03-23 21:17:58,383 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 709.178793589274
-2024-03-23 21:17:58,384 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 363.0324999491374
-2024-03-23 21:17:58,385 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 430.82943471272785
-2024-03-23 21:17:58,386 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.884574219584465
-2024-03-23 21:17:58,387 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.07299296651035547
-2024-03-23 21:17:58,388 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.49380843589703244
-2024-03-23 21:17:58,389 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.05541848631886145
-2024-03-23 21:17:58,390 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.13636363636363635
-2024-03-23 21:17:58,392 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.0
-2024-03-23 21:17:58,393 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.387356842575917
-2024-03-23 21:17:58,394 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7644648142846308
-2024-03-23 21:17:58,395 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8730724032734593
-2024-03-23 21:17:58,396 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.628100370670363
-2024-03-23 21:17:58,397 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.015407355283593202
-2024-03-23 21:17:58,398 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8164203195554304
-2024-03-23 21:17:58,399 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8290175618500727
-2024-03-23 21:17:58,400 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.23206557734866
-2024-03-23 21:17:58,402 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.95146867181982
-2024-03-23 21:17:58,403 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 1023.6544803464544
-2024-03-23 21:17:58,404 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 440.62685021967025
-2024-03-23 21:17:58,405 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 412.14195389413305
-2024-03-23 21:17:58,406 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8651620915015246
-2024-03-23 21:17:58,407 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.057093597198510024
-2024-03-23 21:17:58,408 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.46263810318664433
-2024-03-23 21:17:58,409 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.05275549990472098
-2024-03-23 21:17:58,411 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.45799458051115516
-2024-03-23 21:17:58,412 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.48
-2024-03-23 21:18:15,917 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0323-160451/checkpoints/checkpoint-epoch5.pth ...
-2024-03-23 21:18:42,400 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/patchprot_wo_agg/0323-160451/checkpoints/model_best.pth
-2024-03-23 21:18:44,981 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [0/10308 (0%)] Loss: 12.950713
-2024-03-23 21:23:17,214 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [900/10308 (9%)] Loss: 12.121316
-2024-03-23 21:27:42,958 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [1800/10308 (17%)] Loss: 13.013004
-2024-03-23 21:32:03,731 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [2700/10308 (26%)] Loss: 11.633684
-2024-03-23 21:36:21,284 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [3600/10308 (35%)] Loss: 14.223988
-2024-03-23 21:40:45,861 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [4500/10308 (44%)] Loss: 12.204019
-2024-03-23 21:45:07,207 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [5400/10308 (52%)] Loss: 10.720486
-2024-03-23 21:49:22,393 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [6300/10308 (61%)] Loss: 13.976413
-2024-03-23 21:53:46,162 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [7200/10308 (70%)] Loss: 11.759886
-2024-03-23 21:58:06,420 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [8100/10308 (79%)] Loss: 11.935718
-2024-03-23 22:02:27,739 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [9000/10308 (87%)] Loss: 12.521316
-2024-03-23 22:06:57,128 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [9900/10308 (96%)] Loss: 10.155758
-2024-03-23 22:10:15,988 - PROT.PROT.base.base_trainer - INFO - epoch          : 6
-2024-03-23 22:10:15,988 - PROT.PROT.base.base_trainer - INFO - loss           : 12.741784196165542
-2024-03-23 22:10:15,990 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7743409226338068
-2024-03-23 22:10:15,991 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8764967769384384
-2024-03-23 22:10:15,992 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.5921940331657728
-2024-03-23 22:10:15,994 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.016042608166268717
-2024-03-23 22:10:15,995 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8282067428032557
-2024-03-23 22:10:15,996 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8361049890518188
-2024-03-23 22:10:15,997 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 16.05276608467102
-2024-03-23 22:10:15,998 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 23.077956358591717
-2024-03-23 22:10:16,000 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 771.6762949625651
-2024-03-23 22:10:16,001 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 375.1878484090169
-2024-03-23 22:10:16,002 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 330.87258021036786
-2024-03-23 22:10:16,003 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8556100974480311
-2024-03-23 22:10:16,004 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.08083563887824614
-2024-03-23 22:10:16,005 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.454130952556928
-2024-03-23 22:10:16,006 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.07811527202526729
-2024-03-23 22:10:16,008 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.2857142857142857
-2024-03-23 22:10:16,009 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.5
-2024-03-23 22:10:16,010 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.13444955762462
-2024-03-23 22:10:16,011 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7676384585369997
-2024-03-23 22:10:16,012 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8755584617602429
-2024-03-23 22:10:16,013 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6385710523610655
-2024-03-23 22:10:16,014 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.017827303475714065
-2024-03-23 22:10:16,016 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8188264547018987
-2024-03-23 22:10:16,017 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8314227999576344
-2024-03-23 22:10:16,018 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.09051326104196
-2024-03-23 22:10:16,019 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.58544654951764
-2024-03-23 22:10:16,021 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 843.345054893916
-2024-03-23 22:10:16,022 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 393.6309856611864
-2024-03-23 22:10:16,023 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 409.4762113226296
-2024-03-23 22:10:16,024 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8528921102685681
-2024-03-23 22:10:16,025 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.11548645035157537
-2024-03-23 22:10:16,026 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.4598682678658584
-2024-03-23 22:10:16,027 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.10388719449094685
-2024-03-23 22:10:16,028 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.5707070714596546
-2024-03-23 22:10:16,030 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.5
-2024-03-23 22:10:35,716 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0323-160451/checkpoints/checkpoint-epoch6.pth ...
-2024-03-23 22:11:01,731 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/patchprot_wo_agg/0323-160451/checkpoints/model_best.pth
-2024-03-23 22:11:04,419 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [0/10308 (0%)] Loss: 11.276776
-2024-03-23 22:15:13,745 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [900/10308 (9%)] Loss: 12.328422
-2024-03-23 22:19:32,376 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [1800/10308 (17%)] Loss: 15.423145
-2024-03-23 22:23:54,972 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [2700/10308 (26%)] Loss: 12.467506
-2024-03-23 22:28:20,886 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [3600/10308 (35%)] Loss: 12.232363
-2024-03-23 22:32:46,715 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [4500/10308 (44%)] Loss: 12.625196
-2024-03-23 22:37:19,699 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [5400/10308 (52%)] Loss: 13.032565
-2024-03-23 22:41:47,887 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [6300/10308 (61%)] Loss: 11.584662
-2024-03-23 22:46:09,345 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [7200/10308 (70%)] Loss: 11.618836
-2024-03-23 22:50:30,439 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [8100/10308 (79%)] Loss: 10.411613
-2024-03-23 22:55:00,301 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [9000/10308 (87%)] Loss: 11.393373
-2024-03-23 22:59:16,867 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [9900/10308 (96%)] Loss: 13.301594
-2024-03-23 23:02:40,176 - PROT.PROT.base.base_trainer - INFO - epoch          : 7
-2024-03-23 23:02:40,177 - PROT.PROT.base.base_trainer - INFO - loss           : 12.67154920149747
-2024-03-23 23:02:40,179 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7820288290580114
-2024-03-23 23:02:40,180 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8896111249923706
-2024-03-23 23:02:40,182 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6682602589329084
-2024-03-23 23:02:40,183 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.010809160943608731
-2024-03-23 23:02:40,184 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8189394523700079
-2024-03-23 23:02:40,185 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.829778383175532
-2024-03-23 23:02:40,187 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 15.828001499176025
-2024-03-23 23:02:40,188 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 22.209519068400066
-2024-03-23 23:02:40,189 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 882.0429420471191
-2024-03-23 23:02:40,190 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 281.1776860555013
-2024-03-23 23:02:40,191 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 260.61526107788086
-2024-03-23 23:02:40,192 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8661749263604482
-2024-03-23 23:02:40,194 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.08493969760214289
-2024-03-23 23:02:40,195 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.4306253915031751
-2024-03-23 23:02:40,196 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.07199148274958134
-2024-03-23 23:02:40,197 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.55
-2024-03-23 23:02:40,198 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.375
-2024-03-23 23:02:40,200 - PROT.PROT.base.base_trainer - INFO - val_loss       : 12.763902841898789
-2024-03-23 23:02:40,201 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7670127166593207
-2024-03-23 23:02:40,202 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8743576312856921
-2024-03-23 23:02:40,203 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6199042482616065
-2024-03-23 23:02:40,204 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.011212418302511315
-2024-03-23 23:02:40,205 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8184279461848339
-2024-03-23 23:02:40,206 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8314224823594534
-2024-03-23 23:02:40,207 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.23016094897506
-2024-03-23 23:02:40,208 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.648054135241633
-2024-03-23 23:02:40,209 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 830.2769043419194
-2024-03-23 23:02:40,210 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 381.13472203750894
-2024-03-23 23:02:40,211 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 392.52620744177335
-2024-03-23 23:02:40,213 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8635710736262402
-2024-03-23 23:02:40,214 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.06291449461922709
-2024-03-23 23:02:40,215 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.4552434773022838
-2024-03-23 23:02:40,216 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.058868716323122766
-2024-03-23 23:02:40,217 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.48113207595367635
-2024-03-23 23:02:40,218 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.5555555555555556
-2024-03-23 23:02:57,729 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0323-160451/checkpoints/checkpoint-epoch7.pth ...
-2024-03-23 23:03:22,688 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/patchprot_wo_agg/0323-160451/checkpoints/model_best.pth
-2024-03-23 23:03:25,887 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [0/10308 (0%)] Loss: 11.847872
-2024-03-23 23:07:47,405 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [900/10308 (9%)] Loss: 10.527577
-2024-03-23 23:12:15,758 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [1800/10308 (17%)] Loss: 11.812012
-2024-03-23 23:16:40,381 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [2700/10308 (26%)] Loss: 10.738522
-2024-03-23 23:20:52,400 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [3600/10308 (35%)] Loss: 13.375670
-2024-03-23 23:25:19,292 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [4500/10308 (44%)] Loss: 11.373919
-2024-03-23 23:29:45,823 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [5400/10308 (52%)] Loss: 12.031799
-2024-03-23 23:34:13,598 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [6300/10308 (61%)] Loss: 11.697917
-2024-03-23 23:38:40,184 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [7200/10308 (70%)] Loss: 13.326505
-2024-03-23 23:43:01,751 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [8100/10308 (79%)] Loss: 12.057197
-2024-03-23 23:47:24,230 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [9000/10308 (87%)] Loss: 13.779131
-2024-03-23 23:51:46,127 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [9900/10308 (96%)] Loss: 11.005279
-2024-03-23 23:55:06,964 - PROT.PROT.base.base_trainer - INFO - epoch          : 8
-2024-03-23 23:55:06,965 - PROT.PROT.base.base_trainer - INFO - loss           : 12.509375295522442
-2024-03-23 23:55:06,967 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7829591731230418
-2024-03-23 23:55:06,968 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8868271211783091
-2024-03-23 23:55:06,969 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6586397852321776
-2024-03-23 23:55:06,971 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.009895389172015712
-2024-03-23 23:55:06,972 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8336875488360723
-2024-03-23 23:55:06,974 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8425477196772894
-2024-03-23 23:55:06,975 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 16.29595375061035
-2024-03-23 23:55:06,976 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 21.97389491399129
-2024-03-23 23:55:06,977 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 590.7912470499674
-2024-03-23 23:55:06,978 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 344.6242389678955
-2024-03-23 23:55:06,979 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 386.88696098327637
-2024-03-23 23:55:06,980 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8654297590255737
-2024-03-23 23:55:06,982 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.08211071983290215
-2024-03-23 23:55:06,983 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.46443509062131244
-2024-03-23 23:55:06,984 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.09922408250470956
-2024-03-23 23:55:06,985 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.7857142857142857
-2024-03-23 23:55:06,986 - PROT.PROT.base.base_trainer - INFO - metric_expression: 1.0
-2024-03-23 23:55:06,987 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.04597380240465
-2024-03-23 23:55:06,989 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7670580786532581
-2024-03-23 23:55:06,990 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8756316315204015
-2024-03-23 23:55:06,991 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6262705729822405
-2024-03-23 23:55:06,992 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.014162725107005465
-2024-03-23 23:55:06,993 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8207241284671305
-2024-03-23 23:55:06,995 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8330758841935119
-2024-03-23 23:55:06,996 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.21574545962344
-2024-03-23 23:55:06,997 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.595104565919545
-2024-03-23 23:55:06,998 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 836.2295243872048
-2024-03-23 23:55:06,999 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 388.9688939801881
-2024-03-23 23:55:07,001 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 414.4958304936595
-2024-03-23 23:55:07,002 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8701332085428963
-2024-03-23 23:55:07,003 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.052059614671487536
-2024-03-23 23:55:07,004 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.46137168743614804
-2024-03-23 23:55:07,005 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.047252699100379596
-2024-03-23 23:55:07,007 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.4694960216944667
-2024-03-23 23:55:07,008 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.6875
-2024-03-23 23:55:25,304 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0323-160451/checkpoints/checkpoint-epoch8.pth ...
-2024-03-23 23:55:28,243 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [0/10308 (0%)] Loss: 11.151320
-2024-03-24 00:00:02,738 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [900/10308 (9%)] Loss: 14.464848
-2024-03-24 00:04:21,924 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [1800/10308 (17%)] Loss: 13.951111
-2024-03-24 00:08:43,994 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [2700/10308 (26%)] Loss: 16.474108
-2024-03-24 00:13:03,557 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [3600/10308 (35%)] Loss: 11.977256
-2024-03-24 00:17:21,391 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [4500/10308 (44%)] Loss: 14.162572
-2024-03-24 00:21:45,359 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [5400/10308 (52%)] Loss: 11.769578
-2024-03-24 00:26:21,071 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [6300/10308 (61%)] Loss: 13.726356
-2024-03-24 00:30:34,588 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [7200/10308 (70%)] Loss: 11.700467
-2024-03-24 00:35:00,614 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [8100/10308 (79%)] Loss: 11.535536
-2024-03-24 00:39:22,074 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [9000/10308 (87%)] Loss: 11.352342
-2024-03-24 00:43:47,404 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [9900/10308 (96%)] Loss: 12.053893
-2024-03-24 00:47:07,765 - PROT.PROT.base.base_trainer - INFO - epoch          : 9
-2024-03-24 00:47:07,766 - PROT.PROT.base.base_trainer - INFO - loss           : 12.355020395094229
-2024-03-24 00:47:07,767 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7408308436473211
-2024-03-24 00:47:07,768 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8609151840209961
-2024-03-24 00:47:07,770 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6722711821397146
-2024-03-24 00:47:07,771 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.003911604804064457
-2024-03-24 00:47:07,772 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.7938638279835383
-2024-03-24 00:47:07,773 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8097438861926397
-2024-03-24 00:47:07,775 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 18.169380982716877
-2024-03-24 00:47:07,776 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 25.873804728190105
-2024-03-24 00:47:07,777 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 869.7642059326172
-2024-03-24 00:47:07,778 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 457.6307080586751
-2024-03-24 00:47:07,780 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 395.46889877319336
-2024-03-24 00:47:07,781 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8279079099496206
-2024-03-24 00:47:07,782 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.09625627969702084
-2024-03-24 00:47:07,783 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.40672650933265686
-2024-03-24 00:47:07,784 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.10027562531953056
-2024-03-24 00:47:07,786 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.5
-2024-03-24 00:47:07,787 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0
-2024-03-24 00:47:07,788 - PROT.PROT.base.base_trainer - INFO - val_loss       : 12.907504671174221
-2024-03-24 00:47:07,789 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7679486776190051
-2024-03-24 00:47:07,790 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8752521210490998
-2024-03-24 00:47:07,792 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.5885076127249622
-2024-03-24 00:47:07,793 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.006517586739569717
-2024-03-24 00:47:07,794 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8190170572692618
-2024-03-24 00:47:07,795 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8322520036099141
-2024-03-24 00:47:07,796 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.1526383649819
-2024-03-24 00:47:07,797 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.527015659641954
-2024-03-24 00:47:07,798 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 871.7071016881739
-2024-03-24 00:47:07,800 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 402.93612014939424
-2024-03-24 00:47:07,801 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 415.6525915715967
-2024-03-24 00:47:07,802 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8597244041872201
-2024-03-24 00:47:07,803 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.09778790382111645
-2024-03-24 00:47:07,804 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.456017693470325
-2024-03-24 00:47:07,805 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.0911638928969078
-2024-03-24 00:47:07,806 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.5813008139773113
-2024-03-24 00:47:07,808 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.5
-2024-03-24 00:47:27,312 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0323-160451/checkpoints/checkpoint-epoch9.pth ...
-2024-03-24 00:47:30,021 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [0/10308 (0%)] Loss: 13.023918
-2024-03-24 00:52:00,488 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [900/10308 (9%)] Loss: 11.395464
-2024-03-24 00:56:33,609 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [1800/10308 (17%)] Loss: 12.833973
-2024-03-24 01:00:47,527 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [2700/10308 (26%)] Loss: 14.690296
-2024-03-24 01:05:15,824 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [3600/10308 (35%)] Loss: 13.144833
-2024-03-24 01:09:30,126 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [4500/10308 (44%)] Loss: 14.375207
-2024-03-24 01:13:57,911 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [5400/10308 (52%)] Loss: 12.128181
-2024-03-24 01:18:29,861 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [6300/10308 (61%)] Loss: 10.415788
-2024-03-24 01:22:51,371 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [7200/10308 (70%)] Loss: 13.368131
-2024-03-24 01:27:19,138 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [8100/10308 (79%)] Loss: 11.753754
-2024-03-24 01:31:40,224 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [9000/10308 (87%)] Loss: 10.315160
-2024-03-24 01:35:49,536 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [9900/10308 (96%)] Loss: 14.939457
-2024-03-24 01:39:11,423 - PROT.PROT.base.base_trainer - INFO - epoch          : 10
-2024-03-24 01:39:11,424 - PROT.PROT.base.base_trainer - INFO - loss           : 12.270760011515662
-2024-03-24 01:39:11,426 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7575406680504481
-2024-03-24 01:39:11,427 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8668253719806671
-2024-03-24 01:39:11,428 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.5009158663451672
-2024-03-24 01:39:11,430 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.014115780621068552
-2024-03-24 01:39:11,431 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8056819836298624
-2024-03-24 01:39:11,432 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8158545891443888
-2024-03-24 01:39:11,433 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 17.971155881881714
-2024-03-24 01:39:11,434 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 23.858920415242512
-2024-03-24 01:39:11,436 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 565.6999460856119
-2024-03-24 01:39:11,437 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 257.3386182785034
-2024-03-24 01:39:11,438 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 417.5824546813965
-2024-03-24 01:39:11,439 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8683299819628397
-2024-03-24 01:39:11,441 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.07710826474552353
-2024-03-24 01:39:11,443 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.5523803581794103
-2024-03-24 01:39:11,445 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.0807616498010854
-2024-03-24 01:39:11,446 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.6296296318372091
-2024-03-24 01:39:11,447 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.5
-2024-03-24 01:39:11,448 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.152415402261093
-2024-03-24 01:39:11,450 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7682488087798397
-2024-03-24 01:39:11,451 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8752403911409343
-2024-03-24 01:39:11,452 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6266209041198021
-2024-03-24 01:39:11,454 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.0103202306382389
-2024-03-24 01:39:11,455 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8201394608979735
-2024-03-24 01:39:11,457 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8331508896007749
-2024-03-24 01:39:11,458 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.105002237861886
-2024-03-24 01:39:11,459 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.43187270921095
-2024-03-24 01:39:11,460 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 840.4645700208375
-2024-03-24 01:39:11,461 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 437.6072114613663
-2024-03-24 01:39:11,462 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 428.4577672543121
-2024-03-24 01:39:11,463 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.864884709740037
-2024-03-24 01:39:11,464 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.06769211194993467
-2024-03-24 01:39:11,465 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.45950401926282586
-2024-03-24 01:39:11,466 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.06168889145390904
-2024-03-24 01:39:11,467 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.5222841233928224
-2024-03-24 01:39:11,468 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.6730769230769231
-2024-03-24 01:39:33,758 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0323-160451/checkpoints/checkpoint-epoch10.pth ...
-2024-03-24 01:39:36,729 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [0/10308 (0%)] Loss: 10.655315
-2024-03-24 01:43:45,576 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [900/10308 (9%)] Loss: 12.273094
-2024-03-24 01:48:02,696 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [1800/10308 (17%)] Loss: 12.445913
-2024-03-24 01:52:22,261 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [2700/10308 (26%)] Loss: 11.946399
-2024-03-24 01:56:50,531 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [3600/10308 (35%)] Loss: 13.166370
-2024-03-24 02:01:14,437 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [4500/10308 (44%)] Loss: 10.458103
-2024-03-24 02:05:36,579 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [5400/10308 (52%)] Loss: 10.480433
-2024-03-24 02:10:04,970 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [6300/10308 (61%)] Loss: 12.217638
-2024-03-24 02:14:34,227 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [7200/10308 (70%)] Loss: 10.637827
-2024-03-24 02:19:11,114 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [8100/10308 (79%)] Loss: 15.850676
-2024-03-24 02:23:40,429 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [9000/10308 (87%)] Loss: 11.663136
-2024-03-24 02:28:03,853 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [9900/10308 (96%)] Loss: 12.621406
-2024-03-24 02:31:22,612 - PROT.PROT.base.base_trainer - INFO - epoch          : 11
-2024-03-24 02:31:22,613 - PROT.PROT.base.base_trainer - INFO - loss           : 12.135962168499033
-2024-03-24 02:31:22,615 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7703730364640554
-2024-03-24 02:31:22,616 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8677686899900436
-2024-03-24 02:31:22,618 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.7248281762003899
-2024-03-24 02:31:22,619 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.008559441436470175
-2024-03-24 02:31:22,620 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.7946696778138479
-2024-03-24 02:31:22,621 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.800179531176885
-2024-03-24 02:31:22,622 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 17.323242505391438
-2024-03-24 02:31:22,624 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 25.285848140716553
-2024-03-24 02:31:22,625 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 647.4379920959473
-2024-03-24 02:31:22,626 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 288.1872475941976
-2024-03-24 02:31:22,627 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 269.5636520385742
-2024-03-24 02:31:22,629 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8784801810979843
-2024-03-24 02:31:22,630 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.050744474632665515
-2024-03-24 02:31:22,631 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.4913102239370346
-2024-03-24 02:31:22,632 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.051063282803321876
-2024-03-24 02:31:22,633 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.7962963018152449
-2024-03-24 02:31:22,634 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.3333333333333333
-2024-03-24 02:31:22,635 - PROT.PROT.base.base_trainer - INFO - val_loss       : 12.981892179299106
-2024-03-24 02:31:22,637 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7711582897554025
-2024-03-24 02:31:22,638 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8776195121867191
-2024-03-24 02:31:22,639 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6329305854334093
-2024-03-24 02:31:22,640 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.014160436189327925
-2024-03-24 02:31:22,641 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8209284571484006
-2024-03-24 02:31:22,642 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8334767911926847
-2024-03-24 02:31:22,643 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 15.979440162982447
-2024-03-24 02:31:22,645 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.4774941747039
-2024-03-24 02:31:22,646 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 825.6830144509179
-2024-03-24 02:31:22,647 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 407.95402015883104
-2024-03-24 02:31:22,648 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 390.9410536720304
-2024-03-24 02:31:22,649 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8683346010094892
-2024-03-24 02:31:22,650 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.06590929484437176
-2024-03-24 02:31:22,651 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.45941948995740606
-2024-03-24 02:31:22,653 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.059477897609734355
-2024-03-24 02:31:22,654 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.6197771594384919
-2024-03-24 02:31:22,655 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.46
-2024-03-24 02:31:46,761 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0323-160451/checkpoints/checkpoint-epoch11.pth ...
-2024-03-24 02:31:49,248 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [0/10308 (0%)] Loss: 11.388062
-2024-03-24 02:36:03,806 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [900/10308 (9%)] Loss: 10.689714
-2024-03-24 02:40:19,406 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [1800/10308 (17%)] Loss: 12.885519
-2024-03-24 02:44:45,378 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [2700/10308 (26%)] Loss: 10.134353
-2024-03-24 02:49:16,429 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [3600/10308 (35%)] Loss: 9.713003
-2024-03-24 02:53:50,953 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [4500/10308 (44%)] Loss: 11.704228
-2024-03-24 02:58:11,356 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [5400/10308 (52%)] Loss: 11.351444
-2024-03-24 03:02:32,730 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [6300/10308 (61%)] Loss: 12.458600
-2024-03-24 03:06:50,319 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [7200/10308 (70%)] Loss: 10.759594
-2024-03-24 03:11:19,310 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [8100/10308 (79%)] Loss: 11.014631
-2024-03-24 03:15:47,222 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [9000/10308 (87%)] Loss: 11.014485
-2024-03-24 03:20:15,434 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [9900/10308 (96%)] Loss: 10.175037
-2024-03-24 03:23:38,914 - PROT.PROT.base.base_trainer - INFO - epoch          : 12
-2024-03-24 03:23:38,915 - PROT.PROT.base.base_trainer - INFO - loss           : 12.115119806382578
-2024-03-24 03:23:38,916 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7781307945648829
-2024-03-24 03:23:38,918 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8830781231323878
-2024-03-24 03:23:38,919 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6200638028482596
-2024-03-24 03:23:38,920 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.006683407923749958
-2024-03-24 03:23:38,922 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8362356076637903
-2024-03-24 03:23:38,923 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8446631828943888
-2024-03-24 03:23:38,924 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 15.872751235961914
-2024-03-24 03:23:38,925 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 21.530068556467693
-2024-03-24 03:23:38,926 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 629.389461517334
-2024-03-24 03:23:38,927 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 349.14900398254395
-2024-03-24 03:23:38,929 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 239.41865475972494
-2024-03-24 03:23:38,930 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8809012422959009
-2024-03-24 03:23:38,931 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.07596724076817434
-2024-03-24 03:23:38,932 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.45374040057261783
-2024-03-24 03:23:38,933 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.09180969496568044
-2024-03-24 03:23:38,934 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.5833333333333334
-2024-03-24 03:23:38,935 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0
-2024-03-24 03:23:38,937 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.14374949747346
-2024-03-24 03:23:38,938 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7707910013154864
-2024-03-24 03:23:38,939 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.877613463414991
-2024-03-24 03:23:38,940 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6199536946444929
-2024-03-24 03:23:38,942 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.013006310644722801
-2024-03-24 03:23:38,943 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8217902668507776
-2024-03-24 03:23:38,944 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8338371728619086
-2024-03-24 03:23:38,945 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 15.926814093361042
-2024-03-24 03:23:38,946 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.27540712602904
-2024-03-24 03:23:38,947 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 868.406236177001
-2024-03-24 03:23:38,948 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 393.49758702098666
-2024-03-24 03:23:38,950 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 432.6667861516185
-2024-03-24 03:23:38,951 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8666013567210124
-2024-03-24 03:23:38,952 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.0680900604113579
-2024-03-24 03:23:38,953 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.4587890718585891
-2024-03-24 03:23:38,954 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.06394117137561535
-2024-03-24 03:23:38,955 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.4341736698851866
-2024-03-24 03:23:38,957 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.56
-2024-03-24 03:24:09,472 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0323-160451/checkpoints/checkpoint-epoch12.pth ...
-2024-03-24 03:24:12,381 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [0/10308 (0%)] Loss: 10.108574
-2024-03-24 03:28:33,319 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [900/10308 (9%)] Loss: 11.251759
-2024-03-24 03:33:00,992 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [1800/10308 (17%)] Loss: 10.160800
-2024-03-24 03:37:24,022 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [2700/10308 (26%)] Loss: 11.816771
-2024-03-24 03:41:40,776 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [3600/10308 (35%)] Loss: 15.294388
-2024-03-24 03:46:02,510 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [4500/10308 (44%)] Loss: 12.382523
-2024-03-24 03:50:28,812 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [5400/10308 (52%)] Loss: 11.369429
-2024-03-24 03:54:48,279 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [6300/10308 (61%)] Loss: 12.052025
-2024-03-24 03:59:20,133 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [7200/10308 (70%)] Loss: 10.127102
-2024-03-24 04:03:45,710 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [8100/10308 (79%)] Loss: 13.619474
-2024-03-24 04:08:19,968 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [9000/10308 (87%)] Loss: 13.880797
-2024-03-24 04:12:49,738 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [9900/10308 (96%)] Loss: 13.389909
-2024-03-24 04:16:07,495 - PROT.PROT.base.base_trainer - INFO - epoch          : 13
-2024-03-24 04:16:07,496 - PROT.PROT.base.base_trainer - INFO - loss           : 11.984851678459245
-2024-03-24 04:16:07,497 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7616921861966451
-2024-03-24 04:16:07,499 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8771036267280579
-2024-03-24 04:16:07,500 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6965278635422388
-2024-03-24 04:16:07,501 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.0076498994312714785
-2024-03-24 04:16:07,503 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8109645694494247
-2024-03-24 04:16:07,504 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8233350267012914
-2024-03-24 04:16:07,505 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 17.63944435119629
-2024-03-24 04:16:07,506 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 24.275050163269043
-2024-03-24 04:16:07,508 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 572.937375386556
-2024-03-24 04:16:07,509 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 297.32803599039715
-2024-03-24 04:16:07,510 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 262.6825974782308
-2024-03-24 04:16:07,511 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8598145544528961
-2024-03-24 04:16:07,513 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.06939247778306405
-2024-03-24 04:16:07,514 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.4738311519225438
-2024-03-24 04:16:07,515 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.06639972903455298
-2024-03-24 04:16:07,516 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.6458333395421505
-2024-03-24 04:16:07,517 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.6666666666666666
-2024-03-24 04:16:07,519 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.307092416770343
-2024-03-24 04:16:07,520 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7685635569350746
-2024-03-24 04:16:07,521 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8751287893615526
-2024-03-24 04:16:07,522 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6149616644722936
-2024-03-24 04:16:07,523 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.009276432857133029
-2024-03-24 04:16:07,524 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8190229464720976
-2024-03-24 04:16:07,525 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8317960796540954
-2024-03-24 04:16:07,527 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.161048616430417
-2024-03-24 04:16:07,528 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.55282677055725
-2024-03-24 04:16:07,529 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 966.4102704234668
-2024-03-24 04:16:07,530 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 435.2217489714112
-2024-03-24 04:16:07,531 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 440.5608562525788
-2024-03-24 04:16:07,533 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8660055580394295
-2024-03-24 04:16:07,534 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.0662405827672073
-2024-03-24 04:16:07,535 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.45884481842227526
-2024-03-24 04:16:07,536 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.05667017623129201
-2024-03-24 04:16:07,537 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.5250000002352815
-2024-03-24 04:16:07,538 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.64
-2024-03-24 04:16:28,135 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0323-160451/checkpoints/checkpoint-epoch13.pth ...
-2024-03-24 04:16:30,508 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [0/10308 (0%)] Loss: 11.198372
-2024-03-24 04:20:49,438 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [900/10308 (9%)] Loss: 10.509430
-2024-03-24 04:25:12,352 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [1800/10308 (17%)] Loss: 11.163947
-2024-03-24 04:29:53,979 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [2700/10308 (26%)] Loss: 10.510672
-2024-03-24 04:34:18,115 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [3600/10308 (35%)] Loss: 12.665686
-2024-03-24 04:38:35,596 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [4500/10308 (44%)] Loss: 14.939291
-2024-03-24 04:43:02,952 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [5400/10308 (52%)] Loss: 10.941754
-2024-03-24 04:47:25,206 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [6300/10308 (61%)] Loss: 11.364994
-2024-03-24 04:51:40,724 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [7200/10308 (70%)] Loss: 13.671038
-2024-03-24 04:56:11,844 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [8100/10308 (79%)] Loss: 14.284329
-2024-03-24 05:00:30,087 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [9000/10308 (87%)] Loss: 11.824749
-2024-03-24 05:04:58,234 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [9900/10308 (96%)] Loss: 11.533588
-2024-03-24 05:08:15,869 - PROT.PROT.base.base_trainer - INFO - epoch          : 14
-2024-03-24 05:08:15,870 - PROT.PROT.base.base_trainer - INFO - loss           : 11.853661616473621
-2024-03-24 05:08:15,871 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7504964818557104
-2024-03-24 05:08:15,873 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8664439072211584
-2024-03-24 05:08:15,874 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.5763166157412343
-2024-03-24 05:08:15,875 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.007757728162687272
-2024-03-24 05:08:15,877 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8001297960678736
-2024-03-24 05:08:15,878 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.813591922322909
-2024-03-24 05:08:15,879 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 17.784290472666424
-2024-03-24 05:08:15,880 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 23.918935139973957
-2024-03-24 05:08:15,881 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 610.7045803070068
-2024-03-24 05:08:15,882 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 262.5733591715495
-2024-03-24 05:08:15,884 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 252.56095377604166
-2024-03-24 05:08:15,885 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8626401672760645
-2024-03-24 05:08:15,886 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.07722646184265614
-2024-03-24 05:08:15,888 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.47342345118522644
-2024-03-24 05:08:15,889 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.06960616664340098
-2024-03-24 05:08:15,890 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.4375000037252903
-2024-03-24 05:08:15,891 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.5
-2024-03-24 05:08:15,892 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.273796162482117
-2024-03-24 05:08:15,894 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7678944048406453
-2024-03-24 05:08:15,895 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8737000263265138
-2024-03-24 05:08:15,896 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6025405046469593
-2024-03-24 05:08:15,897 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.009450775074791438
-2024-03-24 05:08:15,898 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8210941457440493
-2024-03-24 05:08:15,900 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8336489330358611
-2024-03-24 05:08:15,901 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 15.927686277790704
-2024-03-24 05:08:15,902 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.240967498934136
-2024-03-24 05:08:15,903 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 874.189173160004
-2024-03-24 05:08:15,904 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 451.19826445632316
-2024-03-24 05:08:15,905 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 440.85415322138374
-2024-03-24 05:08:15,906 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8679795111237417
-2024-03-24 05:08:15,908 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.05442047225847511
-2024-03-24 05:08:15,909 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.4604849970428706
-2024-03-24 05:08:15,910 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.05041910431474942
-2024-03-24 05:08:15,911 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.49736842152319455
-2024-03-24 05:08:15,912 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.48
-2024-03-24 05:08:34,108 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0323-160451/checkpoints/checkpoint-epoch14.pth ...
-2024-03-24 05:08:34,580 - PROT.PROT.main - INFO - Initialising evaluation
-2024-03-24 05:08:43,059 - PROT.PROT.base.base_eval - INFO - Starting evaluating...
-2024-03-24 05:08:49,547 - PROT.PROT.base.base_eval - INFO - metric_ss8: 0.68247332743236
-2024-03-24 05:08:49,548 - PROT.PROT.base.base_eval - INFO - metric_ss3: 0.7915260366031102
-2024-03-24 05:08:49,549 - PROT.PROT.base.base_eval - INFO - metric_dis_mcc: 0.5802678338118962
-2024-03-24 05:08:49,551 - PROT.PROT.base.base_eval - INFO - metric_dis_fnr: 0.02563560410635546
-2024-03-24 05:08:49,552 - PROT.PROT.base.base_eval - INFO - metric_rsa: 0.7212651116507394
-2024-03-24 05:08:49,553 - PROT.PROT.base.base_eval - INFO - metric_asa: 0.7361031004360744
-2024-03-24 05:08:49,554 - PROT.PROT.base.base_eval - INFO - metric_phi: 20.595689501081193
-2024-03-24 05:08:49,556 - PROT.PROT.base.base_eval - INFO - metric_psi: 31.890569141932897
-2024-03-24 05:08:49,557 - PROT.PROT.base.base_eval - INFO - metric_tasa: 1534.2876456124443
-2024-03-24 05:08:49,558 - PROT.PROT.base.base_eval - INFO - metric_thsa: 873.1155264718192
-2024-03-24 05:08:49,560 - PROT.PROT.base.base_eval - INFO - metric_lhp: 565.6480930873325
-2024-03-24 05:08:49,561 - PROT.PROT.base.base_eval - INFO - metric_hp_loc_mcc: 0.8573439206395831
-2024-03-24 05:08:49,562 - PROT.PROT.base.base_eval - INFO - metric_hp_loc_fnr: 0.0752621553838253
-2024-03-24 05:08:49,563 - PROT.PROT.base.base_eval - INFO - metric_lhp_loc_mcc: 0.47422529118401663
-2024-03-24 05:08:49,565 - PROT.PROT.base.base_eval - INFO - metric_lhp_loc_fnr: 0.059658404040549486
-2024-03-24 05:08:49,566 - PROT.PROT.base.base_eval - INFO - metric_species: 0.6666666666666666
-2024-03-24 05:08:49,567 - PROT.PROT.base.base_eval - INFO - metric_expression: 1.0
-2024-03-24 05:08:51,013 - PROT.PROT.base.base_eval - INFO - Starting evaluating...
-2024-03-24 05:10:02,949 - PROT.PROT.base.base_eval - INFO - metric_ss8: 0.7356557216909196
-2024-03-24 05:10:02,954 - PROT.PROT.base.base_eval - INFO - metric_ss3: 0.8670384002010725
-2024-03-24 05:10:02,956 - PROT.PROT.base.base_eval - INFO - metric_dis_mcc: 0.11218420981724815
-2024-03-24 05:10:02,957 - PROT.PROT.base.base_eval - INFO - metric_dis_fnr: 0.010791723636164171
-2024-03-24 05:10:02,958 - PROT.PROT.base.base_eval - INFO - metric_rsa: 0.8157729882943002
-2024-03-24 05:10:02,959 - PROT.PROT.base.base_eval - INFO - metric_asa: 0.8289557555962724
-2024-03-24 05:10:02,961 - PROT.PROT.base.base_eval - INFO - metric_phi: 18.961016961705614
-2024-03-24 05:10:02,962 - PROT.PROT.base.base_eval - INFO - metric_psi: 25.692377441807796
-2024-03-24 05:10:02,963 - PROT.PROT.base.base_eval - INFO - metric_tasa: 969.8217331289547
-2024-03-24 05:10:02,965 - PROT.PROT.base.base_eval - INFO - metric_thsa: 393.1611970154166
-2024-03-24 05:10:02,966 - PROT.PROT.base.base_eval - INFO - metric_lhp: 395.36974947076095
-2024-03-24 05:10:02,967 - PROT.PROT.base.base_eval - INFO - metric_hp_loc_mcc: 0.8653768788365757
-2024-03-24 05:10:02,968 - PROT.PROT.base.base_eval - INFO - metric_hp_loc_fnr: 0.06176747419487904
-2024-03-24 05:10:02,970 - PROT.PROT.base.base_eval - INFO - metric_lhp_loc_mcc: 0.4446216842831945
-2024-03-24 05:10:02,971 - PROT.PROT.base.base_eval - INFO - metric_lhp_loc_fnr: 0.054813074824240436
-2024-03-24 05:10:02,972 - PROT.PROT.base.base_eval - INFO - metric_species: 0.3421052639421664
-2024-03-24 05:10:02,973 - PROT.PROT.base.base_eval - INFO - metric_expression: 0.75
-2024-03-24 05:10:04,316 - PROT.PROT.base.base_eval - INFO - Starting evaluating...
-2024-03-24 05:10:23,806 - PROT.PROT.base.base_eval - INFO - metric_ss8: 0.762987118181975
-2024-03-24 05:10:23,807 - PROT.PROT.base.base_eval - INFO - metric_ss3: 0.8683545765669449
-2024-03-24 05:10:23,808 - PROT.PROT.base.base_eval - INFO - metric_dis_mcc: 0.6390550871906073
-2024-03-24 05:10:23,809 - PROT.PROT.base.base_eval - INFO - metric_dis_fnr: 0.011876946177495563
-2024-03-24 05:10:23,811 - PROT.PROT.base.base_eval - INFO - metric_rsa: 0.7956588537796684
-2024-03-24 05:10:23,812 - PROT.PROT.base.base_eval - INFO - metric_asa: 0.8146862128506536
-2024-03-24 05:10:23,813 - PROT.PROT.base.base_eval - INFO - metric_phi: 16.479720281518023
-2024-03-24 05:10:23,814 - PROT.PROT.base.base_eval - INFO - metric_psi: 23.650720048987345
-2024-03-24 05:10:23,816 - PROT.PROT.base.base_eval - INFO - metric_tasa: 939.6061788807745
-2024-03-24 05:10:23,817 - PROT.PROT.base.base_eval - INFO - metric_thsa: 404.40536107602327
-2024-03-24 05:10:23,818 - PROT.PROT.base.base_eval - INFO - metric_lhp: 485.576080720321
-2024-03-24 05:10:23,820 - PROT.PROT.base.base_eval - INFO - metric_hp_loc_mcc: 0.8668327378190082
-2024-03-24 05:10:23,821 - PROT.PROT.base.base_eval - INFO - metric_hp_loc_fnr: 0.06146006085302519
-2024-03-24 05:10:23,822 - PROT.PROT.base.base_eval - INFO - metric_lhp_loc_mcc: 0.4690208025600599
-2024-03-24 05:10:23,823 - PROT.PROT.base.base_eval - INFO - metric_lhp_loc_fnr: 0.06642416274256033
-2024-03-24 05:10:23,825 - PROT.PROT.base.base_eval - INFO - metric_species: 0.5686274521491107
-2024-03-24 05:10:23,826 - PROT.PROT.base.base_eval - INFO - metric_expression: 0.5714285714285714
-2024-03-24 05:10:23,828 - PROT.PROT.main - INFO - Finished!
+2024-04-06 08:46:02,831 - PROT.PROT.base.base_trainer - INFO - Starting training...
+2024-04-06 08:46:12,900 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [0/10308 (0%)] Loss: 32.812500
+2024-04-06 08:50:36,601 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [900/10308 (9%)] Loss: 31.504725
+2024-04-06 08:54:52,014 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [1800/10308 (17%)] Loss: 16.125256
+2024-04-06 08:59:07,802 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [2700/10308 (26%)] Loss: 17.839077
+2024-04-06 09:03:29,337 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [3600/10308 (35%)] Loss: 15.868198
+2024-04-06 09:07:45,376 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [4500/10308 (44%)] Loss: 16.864283
+2024-04-06 09:12:00,089 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [5400/10308 (52%)] Loss: 16.864746
+2024-04-06 09:16:17,613 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [6300/10308 (61%)] Loss: 18.083044
+2024-04-06 09:20:33,931 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [7200/10308 (70%)] Loss: 12.104265
+2024-04-06 09:24:55,416 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [8100/10308 (79%)] Loss: 14.922300
+2024-04-06 09:29:08,939 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [9000/10308 (87%)] Loss: 12.538664
+2024-04-06 09:33:26,942 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 0 [9900/10308 (96%)] Loss: 12.040691
+2024-04-06 09:36:53,506 - PROT.PROT.base.base_trainer - INFO - epoch          : 0
+2024-04-06 09:36:53,507 - PROT.PROT.base.base_trainer - INFO - loss           : 17.70357610155443
+2024-04-06 09:36:53,508 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.6415937251100937
+2024-04-06 09:36:53,509 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.7905687590440115
+2024-04-06 09:36:53,510 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.397067467837284
+2024-04-06 09:36:53,511 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.046292385299845286
+2024-04-06 09:36:53,513 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.6795853856795778
+2024-04-06 09:36:53,514 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.7101836738487085
+2024-04-06 09:36:53,515 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 28.170948266983032
+2024-04-06 09:36:53,516 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 39.10258404413859
+2024-04-06 09:36:53,517 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 3658.2871602376304
+2024-04-06 09:36:53,518 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 656.0731137593588
+2024-04-06 09:36:53,520 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 575.1480852762858
+2024-04-06 09:36:53,521 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.6717267562635243
+2024-04-06 09:36:53,522 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.2086028470657766
+2024-04-06 09:36:53,523 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.1516941555521705
+2024-04-06 09:36:53,524 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.8507836908102036
+2024-04-06 09:36:53,524 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.6111111111111112
+2024-04-06 09:36:53,525 - PROT.PROT.base.base_trainer - INFO - metric_expression: 1.0
+2024-04-06 09:36:53,526 - PROT.PROT.base.base_trainer - INFO - val_loss       : 14.072674063298974
+2024-04-06 09:36:53,528 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.73435867019685
+2024-04-06 09:36:53,529 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8627395745353065
+2024-04-06 09:36:53,530 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.5833228676742273
+2024-04-06 09:36:53,531 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.008607439838763931
+2024-04-06 09:36:53,532 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8011275598043885
+2024-04-06 09:36:53,533 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8147379101642384
+2024-04-06 09:36:53,534 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 18.14444961758997
+2024-04-06 09:36:53,535 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 25.703018540385905
+2024-04-06 09:36:53,536 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 1271.9379911669066
+2024-04-06 09:36:53,537 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 494.18495831366397
+2024-04-06 09:36:53,538 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 443.6700475629405
+2024-04-06 09:36:53,539 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8560396475765538
+2024-04-06 09:36:53,540 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.05273593603925456
+2024-04-06 09:36:53,541 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.35044189846464513
+2024-04-06 09:36:53,542 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.692194596936452
+2024-04-06 09:36:53,543 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.5367231646836814
+2024-04-06 09:36:53,544 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.5576923076923077
+2024-04-06 09:37:10,862 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0406-084602/checkpoints/checkpoint-epoch0.pth ...
+2024-04-06 09:37:29,256 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/patchprot_wo_agg/0406-084602/checkpoints/model_best.pth
+2024-04-06 09:37:32,245 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [0/10308 (0%)] Loss: 14.357958
+2024-04-06 09:41:48,030 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [900/10308 (9%)] Loss: 11.685702
+2024-04-06 09:46:01,698 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [1800/10308 (17%)] Loss: 12.327213
+2024-04-06 09:50:23,276 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [2700/10308 (26%)] Loss: 13.272009
+2024-04-06 09:54:43,366 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [3600/10308 (35%)] Loss: 14.286105
+2024-04-06 09:59:08,272 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [4500/10308 (44%)] Loss: 13.564539
+2024-04-06 10:03:11,801 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [5400/10308 (52%)] Loss: 18.077892
+2024-04-06 10:07:36,524 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [6300/10308 (61%)] Loss: 22.418451
+2024-04-06 10:12:00,285 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [7200/10308 (70%)] Loss: 12.895516
+2024-04-06 10:16:22,966 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [8100/10308 (79%)] Loss: 19.919924
+2024-04-06 10:20:43,526 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [9000/10308 (87%)] Loss: 15.396128
+2024-04-06 10:24:57,441 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 1 [9900/10308 (96%)] Loss: 13.692447
+2024-04-06 10:28:10,363 - PROT.PROT.base.base_trainer - INFO - epoch          : 1
+2024-04-06 10:28:10,364 - PROT.PROT.base.base_trainer - INFO - loss           : 14.141855470467465
+2024-04-06 10:28:10,365 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7134383271137873
+2024-04-06 10:28:10,366 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8404479225476583
+2024-04-06 10:28:10,368 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.5984188270134231
+2024-04-06 10:28:10,369 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.008399013759723553
+2024-04-06 10:28:10,370 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.7674590200185776
+2024-04-06 10:28:10,371 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.783383329709371
+2024-04-06 10:28:10,372 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 18.295814752578735
+2024-04-06 10:28:10,373 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 28.022369464238484
+2024-04-06 10:28:10,374 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 1477.09099706014
+2024-04-06 10:28:10,375 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 484.40136528015137
+2024-04-06 10:28:10,377 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 341.9939505259196
+2024-04-06 10:28:10,378 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8472669323285421
+2024-04-06 10:28:10,379 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.08231509663164616
+2024-04-06 10:28:10,380 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.26435360591858625
+2024-04-06 10:28:10,381 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.7550715332229933
+2024-04-06 10:28:10,382 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.3333333333333333
+2024-04-06 10:28:10,384 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.5
+2024-04-06 10:28:10,385 - PROT.PROT.base.base_trainer - INFO - val_loss       : 14.231866438890295
+2024-04-06 10:28:10,386 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7469040376453822
+2024-04-06 10:28:10,387 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.869174048579487
+2024-04-06 10:28:10,388 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.5972748230352338
+2024-04-06 10:28:10,389 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.010449688020548903
+2024-04-06 10:28:10,390 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8101232208009136
+2024-04-06 10:28:10,391 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.823592059286758
+2024-04-06 10:28:10,393 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.758442049976644
+2024-04-06 10:28:10,394 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 23.88145588420854
+2024-04-06 10:28:10,395 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 1011.7462466053418
+2024-04-06 10:28:10,396 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 468.0034000565645
+2024-04-06 10:28:10,397 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 443.1111482078299
+2024-04-06 10:28:10,398 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8622705883351681
+2024-04-06 10:28:10,399 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.06394251579581198
+2024-04-06 10:28:10,400 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.3484901428890133
+2024-04-06 10:28:10,401 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.7100741104922622
+2024-04-06 10:28:10,402 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.42780748679038677
+2024-04-06 10:28:10,404 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.5576923076923077
+2024-04-06 10:28:27,639 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0406-084602/checkpoints/checkpoint-epoch1.pth ...
+2024-04-06 10:28:30,402 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [0/10308 (0%)] Loss: 14.851291
+2024-04-06 10:32:44,758 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [900/10308 (9%)] Loss: 13.078324
+2024-04-06 10:36:56,869 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [1800/10308 (17%)] Loss: 11.337062
+2024-04-06 10:41:21,517 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [2700/10308 (26%)] Loss: 12.376369
+2024-04-06 10:45:38,370 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [3600/10308 (35%)] Loss: 15.914023
+2024-04-06 10:49:57,229 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [4500/10308 (44%)] Loss: 14.686213
+2024-04-06 10:54:32,092 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [5400/10308 (52%)] Loss: 12.281258
+2024-04-06 10:58:53,430 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [6300/10308 (61%)] Loss: 11.441292
+2024-04-06 11:03:18,167 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [7200/10308 (70%)] Loss: 12.348514
+2024-04-06 11:07:41,311 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [8100/10308 (79%)] Loss: 13.077316
+2024-04-06 11:11:52,316 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [9000/10308 (87%)] Loss: 16.572437
+2024-04-06 11:16:06,213 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 2 [9900/10308 (96%)] Loss: 12.871925
+2024-04-06 11:19:26,228 - PROT.PROT.base.base_trainer - INFO - epoch          : 2
+2024-04-06 11:19:26,229 - PROT.PROT.base.base_trainer - INFO - loss           : 13.706160364811707
+2024-04-06 11:19:26,230 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7486760566631953
+2024-04-06 11:19:26,232 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8762594163417816
+2024-04-06 11:19:26,233 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.5742202425996462
+2024-04-06 11:19:26,234 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.013484258825580278
+2024-04-06 11:19:26,235 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8047485003868738
+2024-04-06 11:19:26,236 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8194323728481928
+2024-04-06 11:19:26,237 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 16.708627065022785
+2024-04-06 11:19:26,238 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 23.350209712982178
+2024-04-06 11:19:26,239 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 1048.4011535644531
+2024-04-06 11:19:26,241 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 503.02177810668945
+2024-04-06 11:19:26,242 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 440.6809247334798
+2024-04-06 11:19:26,243 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8503552973270416
+2024-04-06 11:19:26,244 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.08217840796957414
+2024-04-06 11:19:26,245 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.27660474142370123
+2024-04-06 11:19:26,246 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.7606309223920107
+2024-04-06 11:19:26,247 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.5
+2024-04-06 11:19:26,248 - PROT.PROT.base.base_trainer - INFO - metric_expression: 1.0
+2024-04-06 11:19:26,250 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.578707536648121
+2024-04-06 11:19:26,251 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.756586133224058
+2024-04-06 11:19:26,252 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8711515754131374
+2024-04-06 11:19:26,253 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6116933603182511
+2024-04-06 11:19:26,254 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.0136883325816383
+2024-04-06 11:19:26,255 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8149464565889422
+2024-04-06 11:19:26,256 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8288133500686871
+2024-04-06 11:19:26,257 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.49159761724437
+2024-04-06 11:19:26,258 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 23.323674624256544
+2024-04-06 11:19:26,259 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 922.0343294319631
+2024-04-06 11:19:26,260 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 441.5560431955485
+2024-04-06 11:19:26,261 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 425.9810654897092
+2024-04-06 11:19:26,262 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8595594271907507
+2024-04-06 11:19:26,263 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.06619371641839672
+2024-04-06 11:19:26,264 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.3192399560808412
+2024-04-06 11:19:26,265 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.7855594541441058
+2024-04-06 11:19:26,266 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.5066666672229767
+2024-04-06 11:19:26,267 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.6296296296296297
+2024-04-06 11:19:44,701 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0406-084602/checkpoints/checkpoint-epoch2.pth ...
+2024-04-06 11:20:03,333 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/patchprot_wo_agg/0406-084602/checkpoints/model_best.pth
+2024-04-06 11:20:05,261 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [0/10308 (0%)] Loss: 12.924235
+2024-04-06 11:24:25,485 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [900/10308 (9%)] Loss: 12.767688
+2024-04-06 11:28:47,878 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [1800/10308 (17%)] Loss: 11.493066
+2024-04-06 11:33:18,674 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [2700/10308 (26%)] Loss: 13.564150
+2024-04-06 11:37:46,528 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [3600/10308 (35%)] Loss: 12.478807
+2024-04-06 11:41:59,277 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [4500/10308 (44%)] Loss: 12.546083
+2024-04-06 11:46:16,424 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [5400/10308 (52%)] Loss: 14.422333
+2024-04-06 11:50:32,631 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [6300/10308 (61%)] Loss: 12.730113
+2024-04-06 11:54:50,426 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [7200/10308 (70%)] Loss: 12.398909
+2024-04-06 11:59:08,120 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [8100/10308 (79%)] Loss: 10.390157
+2024-04-06 12:03:16,163 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [9000/10308 (87%)] Loss: 12.004406
+2024-04-06 12:07:36,165 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 3 [9900/10308 (96%)] Loss: 13.239117
+2024-04-06 12:10:53,019 - PROT.PROT.base.base_trainer - INFO - epoch          : 3
+2024-04-06 12:10:53,020 - PROT.PROT.base.base_trainer - INFO - loss           : 13.48181837432805
+2024-04-06 12:10:53,021 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7879483749469122
+2024-04-06 12:10:53,022 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8916708578666052
+2024-04-06 12:10:53,024 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.5759523846209049
+2024-04-06 12:10:53,025 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.011140324728330597
+2024-04-06 12:10:53,026 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8393855889638265
+2024-04-06 12:10:53,027 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8555915504693985
+2024-04-06 12:10:53,028 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 15.52030905087789
+2024-04-06 12:10:53,029 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 20.618829647699993
+2024-04-06 12:10:53,030 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 609.9784959157308
+2024-04-06 12:10:53,031 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 225.79602114359537
+2024-04-06 12:10:53,033 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 310.70645268758136
+2024-04-06 12:10:53,034 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8712713023026785
+2024-04-06 12:10:53,035 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.06943953471879165
+2024-04-06 12:10:53,036 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.41646584620078403
+2024-04-06 12:10:53,037 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.6274750207861265
+2024-04-06 12:10:53,038 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.22727272727272727
+2024-04-06 12:10:53,039 - PROT.PROT.base.base_trainer - INFO - metric_expression: 1.0
+2024-04-06 12:10:53,040 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.917502917046916
+2024-04-06 12:10:53,041 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7629356596522665
+2024-04-06 12:10:53,042 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8718386735643407
+2024-04-06 12:10:53,043 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6111957356316454
+2024-04-06 12:10:53,044 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.008807463206825916
+2024-04-06 12:10:53,045 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8158340106591088
+2024-04-06 12:10:53,046 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8288915387158904
+2024-04-06 12:10:53,047 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.469573304222077
+2024-04-06 12:10:53,048 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 23.021811550393757
+2024-04-06 12:10:53,049 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 949.1674341434042
+2024-04-06 12:10:53,050 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 454.59770147035044
+2024-04-06 12:10:53,051 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 440.60434979090394
+2024-04-06 12:10:53,052 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8622440429255781
+2024-04-06 12:10:53,053 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.06303615137461248
+2024-04-06 12:10:53,054 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.3150999337644592
+2024-04-06 12:10:53,055 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.8014575623680797
+2024-04-06 12:10:53,056 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.4481865288834498
+2024-04-06 12:10:53,057 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.5576923076923077
+2024-04-06 12:11:10,325 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0406-084602/checkpoints/checkpoint-epoch3.pth ...
+2024-04-06 12:11:13,080 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [0/10308 (0%)] Loss: 10.916144
+2024-04-06 12:15:22,799 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [900/10308 (9%)] Loss: 12.546860
+2024-04-06 12:19:43,403 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [1800/10308 (17%)] Loss: 11.820292
+2024-04-06 12:24:09,675 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [2700/10308 (26%)] Loss: 12.924296
+2024-04-06 12:28:29,475 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [3600/10308 (35%)] Loss: 13.887471
+2024-04-06 12:32:49,056 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [4500/10308 (44%)] Loss: 13.763751
+2024-04-06 12:36:57,588 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [5400/10308 (52%)] Loss: 13.107868
+2024-04-06 12:41:20,946 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [6300/10308 (61%)] Loss: 13.936573
+2024-04-06 12:45:27,639 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [7200/10308 (70%)] Loss: 11.273007
+2024-04-06 12:49:56,132 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [8100/10308 (79%)] Loss: 14.083552
+2024-04-06 12:54:13,736 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [9000/10308 (87%)] Loss: 13.931380
+2024-04-06 12:58:33,110 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 4 [9900/10308 (96%)] Loss: 10.624949
+2024-04-06 13:01:43,697 - PROT.PROT.base.base_trainer - INFO - epoch          : 4
+2024-04-06 13:01:43,698 - PROT.PROT.base.base_trainer - INFO - loss           : 13.253719613178712
+2024-04-06 13:01:43,700 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7531283795833588
+2024-04-06 13:01:43,701 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8646179984013239
+2024-04-06 13:01:43,702 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.5829969060917696
+2024-04-06 13:01:43,703 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.008050497776518265
+2024-04-06 13:01:43,705 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8155820667743683
+2024-04-06 13:01:43,706 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8254859695831934
+2024-04-06 13:01:43,707 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 17.877588192621868
+2024-04-06 13:01:43,708 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 24.703024705251057
+2024-04-06 13:01:43,709 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 606.9417533874512
+2024-04-06 13:01:43,710 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 385.0189692179362
+2024-04-06 13:01:43,711 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 292.03975105285645
+2024-04-06 13:01:43,712 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8589786092440287
+2024-04-06 13:01:43,713 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.08565115680297215
+2024-04-06 13:01:43,714 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.31133965216577053
+2024-04-06 13:01:43,716 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.8086839119593302
+2024-04-06 13:01:43,717 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.3333333333333333
+2024-04-06 13:01:43,718 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.6666666666666666
+2024-04-06 13:01:43,719 - PROT.PROT.base.base_trainer - INFO - val_loss       : 14.04460348150387
+2024-04-06 13:01:43,720 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7629999303949715
+2024-04-06 13:01:43,721 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.87280666003368
+2024-04-06 13:01:43,722 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6174734072223635
+2024-04-06 13:01:43,723 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.013704079620211945
+2024-04-06 13:01:43,725 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8166517894646338
+2024-04-06 13:01:43,726 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8291972290545812
+2024-04-06 13:01:43,727 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.256854303648552
+2024-04-06 13:01:43,728 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.72272942250945
+2024-04-06 13:01:43,729 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 980.0565799839823
+2024-04-06 13:01:43,730 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 463.06371024437937
+2024-04-06 13:01:43,731 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 499.6223188871827
+2024-04-06 13:01:43,732 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8648028180168124
+2024-04-06 13:01:43,734 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.05971899442546537
+2024-04-06 13:01:43,735 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.4190428702837729
+2024-04-06 13:01:43,736 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.589478488691921
+2024-04-06 13:01:43,737 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.5795148251994923
+2024-04-06 13:01:43,738 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.5185185185185185
+2024-04-06 13:02:00,702 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0406-084602/checkpoints/checkpoint-epoch4.pth ...
+2024-04-06 13:02:02,848 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [0/10308 (0%)] Loss: 12.424024
+2024-04-06 13:06:24,099 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [900/10308 (9%)] Loss: 15.280556
+2024-04-06 13:10:37,999 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [1800/10308 (17%)] Loss: 13.935511
+2024-04-06 13:15:01,471 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [2700/10308 (26%)] Loss: 15.334411
+2024-04-06 13:19:32,959 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [3600/10308 (35%)] Loss: 11.240938
+2024-04-06 13:24:02,265 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [4500/10308 (44%)] Loss: 11.997985
+2024-04-06 13:28:24,043 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [5400/10308 (52%)] Loss: 11.484359
+2024-04-06 13:32:49,474 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [6300/10308 (61%)] Loss: 14.730022
+2024-04-06 13:37:06,780 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [7200/10308 (70%)] Loss: 14.268007
+2024-04-06 13:41:27,088 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [8100/10308 (79%)] Loss: 13.720038
+2024-04-06 13:45:35,068 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [9000/10308 (87%)] Loss: 11.958292
+2024-04-06 13:49:51,388 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 5 [9900/10308 (96%)] Loss: 11.809969
+2024-04-06 13:53:07,674 - PROT.PROT.base.base_trainer - INFO - epoch          : 5
+2024-04-06 13:53:07,676 - PROT.PROT.base.base_trainer - INFO - loss           : 13.124444243145897
+2024-04-06 13:53:07,677 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.8002906193335851
+2024-04-06 13:53:07,678 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8921481271584829
+2024-04-06 13:53:07,679 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6635162408153216
+2024-04-06 13:53:07,681 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.00982760430391257
+2024-04-06 13:53:07,682 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8124266415834427
+2024-04-06 13:53:07,683 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8220228403806686
+2024-04-06 13:53:07,684 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 14.590072949727377
+2024-04-06 13:53:07,685 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 20.91409953435262
+2024-04-06 13:53:07,686 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 725.3763275146484
+2024-04-06 13:53:07,687 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 355.11294110616046
+2024-04-06 13:53:07,688 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 449.1210594177246
+2024-04-06 13:53:07,689 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8802593847115835
+2024-04-06 13:53:07,691 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.06791170407086611
+2024-04-06 13:53:07,692 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.45712415128946304
+2024-04-06 13:53:07,693 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.5653846810261408
+2024-04-06 13:53:07,694 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.36363636363636365
+2024-04-06 13:53:07,695 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.0
+2024-04-06 13:53:07,696 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.287688584345293
+2024-04-06 13:53:07,697 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7668731927431818
+2024-04-06 13:53:07,698 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8751414303849984
+2024-04-06 13:53:07,699 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6270842070680978
+2024-04-06 13:53:07,700 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.012172390613404216
+2024-04-06 13:53:07,702 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.818429696493923
+2024-04-06 13:53:07,703 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8310345350816241
+2024-04-06 13:53:07,704 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.22405435238377
+2024-04-06 13:53:07,705 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.734213385634757
+2024-04-06 13:53:07,706 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 989.3193951708804
+2024-04-06 13:53:07,707 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 415.1238358425478
+2024-04-06 13:53:07,708 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 391.638064254254
+2024-04-06 13:53:07,709 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8671841072640296
+2024-04-06 13:53:07,710 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.056280731933184544
+2024-04-06 13:53:07,711 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.3800268865337497
+2024-04-06 13:53:07,713 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.6821729753482606
+2024-04-06 13:53:07,714 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.5067750683160333
+2024-04-06 13:53:07,715 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.48
+2024-04-06 13:53:26,535 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0406-084602/checkpoints/checkpoint-epoch5.pth ...
+2024-04-06 13:53:52,385 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/patchprot_wo_agg/0406-084602/checkpoints/model_best.pth
+2024-04-06 13:53:54,834 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [0/10308 (0%)] Loss: 13.362139
+2024-04-06 13:58:24,122 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [900/10308 (9%)] Loss: 14.594133
+2024-04-06 14:02:46,218 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [1800/10308 (17%)] Loss: 13.052903
+2024-04-06 14:07:04,489 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [2700/10308 (26%)] Loss: 11.942241
+2024-04-06 14:11:18,127 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [3600/10308 (35%)] Loss: 14.157411
+2024-04-06 14:15:39,347 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [4500/10308 (44%)] Loss: 12.361786
+2024-04-06 14:19:57,625 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [5400/10308 (52%)] Loss: 10.904600
+2024-04-06 14:24:09,464 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [6300/10308 (61%)] Loss: 15.196841
+2024-04-06 14:28:30,203 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [7200/10308 (70%)] Loss: 12.459981
+2024-04-06 14:32:47,004 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [8100/10308 (79%)] Loss: 12.168733
+2024-04-06 14:37:04,021 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [9000/10308 (87%)] Loss: 12.541835
+2024-04-06 14:41:29,650 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 6 [9900/10308 (96%)] Loss: 10.448720
+2024-04-06 14:44:46,385 - PROT.PROT.base.base_trainer - INFO - epoch          : 6
+2024-04-06 14:44:46,386 - PROT.PROT.base.base_trainer - INFO - loss           : 12.966936499175345
+2024-04-06 14:44:46,387 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.773495132724444
+2024-04-06 14:44:46,389 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8745649258295695
+2024-04-06 14:44:46,390 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.5800346235434214
+2024-04-06 14:44:46,391 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.014840417832601815
+2024-04-06 14:44:46,392 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8283205330371857
+2024-04-06 14:44:46,393 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8362103203932444
+2024-04-06 14:44:46,395 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 16.04967427253723
+2024-04-06 14:44:46,396 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 23.091594060262043
+2024-04-06 14:44:46,397 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 772.3667488098145
+2024-04-06 14:44:46,398 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 356.40610758463544
+2024-04-06 14:44:46,399 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 319.4760004679362
+2024-04-06 14:44:46,400 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8563866019248962
+2024-04-06 14:44:46,401 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.07487996046741803
+2024-04-06 14:44:46,402 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.3896820085744063
+2024-04-06 14:44:46,403 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.6667135482033094
+2024-04-06 14:44:46,404 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.5476190490382058
+2024-04-06 14:44:46,405 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.0
+2024-04-06 14:44:46,406 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.230206139413193
+2024-04-06 14:44:46,407 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7676064010255891
+2024-04-06 14:44:46,408 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8750848733850951
+2024-04-06 14:44:46,409 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6342310604237268
+2024-04-06 14:44:46,411 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.01693103205355922
+2024-04-06 14:44:46,412 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8187403857048148
+2024-04-06 14:44:46,413 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8313709574431951
+2024-04-06 14:44:46,414 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.11084942448183
+2024-04-06 14:44:46,415 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.61335629466715
+2024-04-06 14:44:46,416 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 852.8690961155064
+2024-04-06 14:44:46,417 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 398.45803577521633
+2024-04-06 14:44:46,418 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 417.0685147077835
+2024-04-06 14:44:46,419 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8557153238581555
+2024-04-06 14:44:46,420 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.10495087925286282
+2024-04-06 14:44:46,421 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.34412907601189485
+2024-04-06 14:44:46,422 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.7672540498313208
+2024-04-06 14:44:46,423 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.5239898995919661
+2024-04-06 14:44:46,424 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.5769230769230769
+2024-04-06 14:45:05,100 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0406-084602/checkpoints/checkpoint-epoch6.pth ...
+2024-04-06 14:45:34,931 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/patchprot_wo_agg/0406-084602/checkpoints/model_best.pth
+2024-04-06 14:45:37,497 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [0/10308 (0%)] Loss: 11.254768
+2024-04-06 14:49:44,774 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [900/10308 (9%)] Loss: 12.273778
+2024-04-06 14:53:59,039 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [1800/10308 (17%)] Loss: 16.050417
+2024-04-06 14:58:16,451 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [2700/10308 (26%)] Loss: 12.609618
+2024-04-06 15:02:37,200 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [3600/10308 (35%)] Loss: 12.510210
+2024-04-06 15:06:57,955 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [4500/10308 (44%)] Loss: 12.642534
+2024-04-06 15:11:25,444 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [5400/10308 (52%)] Loss: 14.314386
+2024-04-06 15:15:48,546 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [6300/10308 (61%)] Loss: 11.760017
+2024-04-06 15:20:05,101 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [7200/10308 (70%)] Loss: 12.496842
+2024-04-06 15:24:22,885 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [8100/10308 (79%)] Loss: 10.546770
+2024-04-06 15:28:48,735 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [9000/10308 (87%)] Loss: 11.946799
+2024-04-06 15:33:02,008 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 7 [9900/10308 (96%)] Loss: 13.128345
+2024-04-06 15:36:23,181 - PROT.PROT.base.base_trainer - INFO - epoch          : 7
+2024-04-06 15:36:23,182 - PROT.PROT.base.base_trainer - INFO - loss           : 12.819613446176989
+2024-04-06 15:36:23,183 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.780137856801351
+2024-04-06 15:36:23,185 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.883874441186587
+2024-04-06 15:36:23,186 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6795438726743063
+2024-04-06 15:36:23,187 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.01212399085246337
+2024-04-06 15:36:23,188 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8174810459216436
+2024-04-06 15:36:23,189 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8284811427195867
+2024-04-06 15:36:23,190 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 15.948055426279703
+2024-04-06 15:36:23,191 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 22.33552837371826
+2024-04-06 15:36:23,192 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 870.7299257914225
+2024-04-06 15:36:23,193 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 275.70094935099286
+2024-04-06 15:36:23,194 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 267.0972442626953
+2024-04-06 15:36:23,195 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8612681875626246
+2024-04-06 15:36:23,196 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.07993508006135623
+2024-04-06 15:36:23,197 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.36617256204287213
+2024-04-06 15:36:23,198 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.6772643874088923
+2024-04-06 15:36:23,199 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.65
+2024-04-06 15:36:23,200 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.375
+2024-04-06 15:36:23,201 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.00925680632081
+2024-04-06 15:36:23,202 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.76730821955248
+2024-04-06 15:36:23,203 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.874857909675014
+2024-04-06 15:36:23,204 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.621548032992846
+2024-04-06 15:36:23,205 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.011640485412955827
+2024-04-06 15:36:23,207 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8184276001039906
+2024-04-06 15:36:23,208 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8313626366567788
+2024-04-06 15:36:23,209 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.21018796301416
+2024-04-06 15:36:23,210 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.580707523655626
+2024-04-06 15:36:23,211 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 869.9185234998865
+2024-04-06 15:36:23,212 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 393.9433827347421
+2024-04-06 15:36:23,213 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 385.60572242736816
+2024-04-06 15:36:23,214 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8638482708552667
+2024-04-06 15:36:23,215 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.0638091643907927
+2024-04-06 15:36:23,216 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.3391024530292718
+2024-04-06 15:36:23,217 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.7825170355914264
+2024-04-06 15:36:23,218 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.5592991920976305
+2024-04-06 15:36:23,219 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.7037037037037037
+2024-04-06 15:36:41,048 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0406-084602/checkpoints/checkpoint-epoch7.pth ...
+2024-04-06 15:36:58,960 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/patchprot_wo_agg/0406-084602/checkpoints/model_best.pth
+2024-04-06 15:37:02,042 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [0/10308 (0%)] Loss: 11.776482
+2024-04-06 15:41:21,342 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [900/10308 (9%)] Loss: 10.451235
+2024-04-06 15:45:46,416 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [1800/10308 (17%)] Loss: 11.904390
+2024-04-06 15:50:07,505 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [2700/10308 (26%)] Loss: 11.150983
+2024-04-06 15:54:16,171 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [3600/10308 (35%)] Loss: 14.245533
+2024-04-06 15:58:39,018 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [4500/10308 (44%)] Loss: 11.372562
+2024-04-06 16:03:01,693 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [5400/10308 (52%)] Loss: 12.861312
+2024-04-06 16:07:25,503 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [6300/10308 (61%)] Loss: 11.555119
+2024-04-06 16:11:47,933 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [7200/10308 (70%)] Loss: 12.802176
+2024-04-06 16:16:05,613 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [8100/10308 (79%)] Loss: 12.390824
+2024-04-06 16:20:24,277 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [9000/10308 (87%)] Loss: 12.808039
+2024-04-06 16:24:41,617 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 8 [9900/10308 (96%)] Loss: 11.251629
+2024-04-06 16:28:00,613 - PROT.PROT.base.base_trainer - INFO - epoch          : 8
+2024-04-06 16:28:00,614 - PROT.PROT.base.base_trainer - INFO - loss           : 12.694304023371052
+2024-04-06 16:28:00,615 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7853220601876577
+2024-04-06 16:28:00,616 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8880817492802938
+2024-04-06 16:28:00,617 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6887787207961082
+2024-04-06 16:28:00,618 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.00947616716924434
+2024-04-06 16:28:00,620 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8333875040213267
+2024-04-06 16:28:00,621 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.842668796579043
+2024-04-06 16:28:00,622 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 16.38297955195109
+2024-04-06 16:28:00,623 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 22.044586181640625
+2024-04-06 16:28:00,624 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 592.8701922098795
+2024-04-06 16:28:00,625 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 349.58864339192706
+2024-04-06 16:28:00,626 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 365.16077931722003
+2024-04-06 16:28:00,627 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8586606085300446
+2024-04-06 16:28:00,628 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.08767814453070362
+2024-04-06 16:28:00,629 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.43899260958035785
+2024-04-06 16:28:00,631 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.6573069343964258
+2024-04-06 16:28:00,632 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.7857142857142857
+2024-04-06 16:28:00,633 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.0
+2024-04-06 16:28:00,634 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.017029702443478
+2024-04-06 16:28:00,635 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7682689530603121
+2024-04-06 16:28:00,636 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8756456422409888
+2024-04-06 16:28:00,637 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6221097839851881
+2024-04-06 16:28:00,638 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.013190961070444669
+2024-04-06 16:28:00,639 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8203354085283526
+2024-04-06 16:28:00,641 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8327002416457637
+2024-04-06 16:28:00,642 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.23430952198831
+2024-04-06 16:28:00,643 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.561814602010806
+2024-04-06 16:28:00,644 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 821.5247446320593
+2024-04-06 16:28:00,645 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 392.16649490440903
+2024-04-06 16:28:00,646 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 404.9390405500067
+2024-04-06 16:28:00,647 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8690055534658273
+2024-04-06 16:28:00,648 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.05443592413789929
+2024-04-06 16:28:00,649 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.40706445864731783
+2024-04-06 16:28:00,650 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.6033091858195241
+2024-04-06 16:28:00,651 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.450928382358121
+2024-04-06 16:28:00,652 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.625
+2024-04-06 16:28:18,585 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0406-084602/checkpoints/checkpoint-epoch8.pth ...
+2024-04-06 16:28:21,139 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [0/10308 (0%)] Loss: 11.189224
+2024-04-06 16:32:53,104 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [900/10308 (9%)] Loss: 14.328749
+2024-04-06 16:37:08,571 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [1800/10308 (17%)] Loss: 11.487382
+2024-04-06 16:41:26,657 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [2700/10308 (26%)] Loss: 15.916800
+2024-04-06 16:45:42,324 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [3600/10308 (35%)] Loss: 12.092440
+2024-04-06 16:49:56,511 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [4500/10308 (44%)] Loss: 14.175695
+2024-04-06 16:54:16,997 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [5400/10308 (52%)] Loss: 12.079272
+2024-04-06 16:58:49,025 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [6300/10308 (61%)] Loss: 12.971387
+2024-04-06 17:02:59,129 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [7200/10308 (70%)] Loss: 11.671556
+2024-04-06 17:07:20,906 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [8100/10308 (79%)] Loss: 11.598127
+2024-04-06 17:11:38,626 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [9000/10308 (87%)] Loss: 11.114329
+2024-04-06 17:15:59,646 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 9 [9900/10308 (96%)] Loss: 12.492561
+2024-04-06 17:19:17,657 - PROT.PROT.base.base_trainer - INFO - epoch          : 9
+2024-04-06 17:19:17,658 - PROT.PROT.base.base_trainer - INFO - loss           : 12.560391480404961
+2024-04-06 17:19:17,660 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7414979139963785
+2024-04-06 17:19:17,661 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.861639216542244
+2024-04-06 17:19:17,662 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6708034972349802
+2024-04-06 17:19:17,663 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.004238992958562449
+2024-04-06 17:19:17,665 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.794293055931727
+2024-04-06 17:19:17,666 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8102107495069504
+2024-04-06 17:19:17,667 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 18.23967655499776
+2024-04-06 17:19:17,668 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 25.981499036153156
+2024-04-06 17:19:17,669 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 876.8643035888672
+2024-04-06 17:19:17,671 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 443.72121175130206
+2024-04-06 17:19:17,672 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 377.15955479939777
+2024-04-06 17:19:17,673 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8213451703389486
+2024-04-06 17:19:17,674 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.09546053937325875
+2024-04-06 17:19:17,675 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.3644962445832789
+2024-04-06 17:19:17,676 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.7509153311451277
+2024-04-06 17:19:17,678 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.4
+2024-04-06 17:19:17,679 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0
+2024-04-06 17:19:17,680 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.253190835903492
+2024-04-06 17:19:17,681 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7682482151527686
+2024-04-06 17:19:17,682 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8758000338869342
+2024-04-06 17:19:17,683 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.5937842701808121
+2024-04-06 17:19:17,684 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.006969146058693652
+2024-04-06 17:19:17,685 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.818876131874169
+2024-04-06 17:19:17,686 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8319186685929879
+2024-04-06 17:19:17,688 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.109124980729444
+2024-04-06 17:19:17,689 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.5192013983357
+2024-04-06 17:19:17,690 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 867.7285026606598
+2024-04-06 17:19:17,691 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 409.5189351085367
+2024-04-06 17:19:17,692 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 407.02840439067995
+2024-04-06 17:19:17,693 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8618081000898157
+2024-04-06 17:19:17,695 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.08618474926806409
+2024-04-06 17:19:17,696 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.3470652835715984
+2024-04-06 17:19:17,697 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.7262272462936125
+2024-04-06 17:19:17,698 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.5094850957393646
+2024-04-06 17:19:17,699 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.5384615384615384
+2024-04-06 17:19:36,852 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0406-084602/checkpoints/checkpoint-epoch9.pth ...
+2024-04-06 17:19:39,880 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [0/10308 (0%)] Loss: 13.261815
+2024-04-06 17:24:06,724 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [900/10308 (9%)] Loss: 11.673261
+2024-04-06 17:28:36,050 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [1800/10308 (17%)] Loss: 11.996839
+2024-04-06 17:32:46,244 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [2700/10308 (26%)] Loss: 16.116440
+2024-04-06 17:37:10,600 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [3600/10308 (35%)] Loss: 13.459705
+2024-04-06 17:41:20,698 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [4500/10308 (44%)] Loss: 15.342464
+2024-04-06 17:45:44,239 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [5400/10308 (52%)] Loss: 12.560844
+2024-04-06 17:50:11,939 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [6300/10308 (61%)] Loss: 10.678069
+2024-04-06 17:54:29,873 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [7200/10308 (70%)] Loss: 13.592765
+2024-04-06 17:58:53,191 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [8100/10308 (79%)] Loss: 12.464912
+2024-04-06 18:03:08,944 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [9000/10308 (87%)] Loss: 10.745386
+2024-04-06 18:07:13,089 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 10 [9900/10308 (96%)] Loss: 13.712720
+2024-04-06 18:10:30,511 - PROT.PROT.base.base_trainer - INFO - epoch          : 10
+2024-04-06 18:10:30,512 - PROT.PROT.base.base_trainer - INFO - loss           : 12.472343713178141
+2024-04-06 18:10:30,514 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7605614264806112
+2024-04-06 18:10:30,515 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8688785334428152
+2024-04-06 18:10:30,516 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.47313887625932693
+2024-04-06 18:10:30,517 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.010363574071864909
+2024-04-06 18:10:30,518 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8058341940244039
+2024-04-06 18:10:30,520 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8164203961690267
+2024-04-06 18:10:30,521 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 17.843839089075725
+2024-04-06 18:10:30,522 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 23.926383177439373
+2024-04-06 18:10:30,523 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 635.304677327474
+2024-04-06 18:10:30,524 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 285.13522974650067
+2024-04-06 18:10:30,525 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 393.3147888183594
+2024-04-06 18:10:30,526 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8634777019421259
+2024-04-06 18:10:30,527 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.07179479921857516
+2024-04-06 18:10:30,528 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.40050113076965016
+2024-04-06 18:10:30,529 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.6663979664444923
+2024-04-06 18:10:30,530 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.40740740961498684
+2024-04-06 18:10:30,531 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.0
+2024-04-06 18:10:30,532 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.212705958813318
+2024-04-06 18:10:30,533 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7699038996687675
+2024-04-06 18:10:30,534 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8762750385872112
+2024-04-06 18:10:30,535 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6347455380010208
+2024-04-06 18:10:30,536 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.010996912429934003
+2024-04-06 18:10:30,537 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8206871690785313
+2024-04-06 18:10:30,538 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8337024649350846
+2024-04-06 18:10:30,539 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.092114826849905
+2024-04-06 18:10:30,540 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.40593241413581
+2024-04-06 18:10:30,541 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 807.8707049042537
+2024-04-06 18:10:30,542 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 418.56489848034846
+2024-04-06 18:10:30,543 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 396.71649289571053
+2024-04-06 18:10:30,544 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8649308188814958
+2024-04-06 18:10:30,545 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.05365499821354075
+2024-04-06 18:10:30,546 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.3576673324093295
+2024-04-06 18:10:30,547 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.7454025545655801
+2024-04-06 18:10:30,548 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.5849582180173284
+2024-04-06 18:10:30,549 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.6153846153846154
+2024-04-06 18:10:47,458 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0406-084602/checkpoints/checkpoint-epoch10.pth ...
+2024-04-06 18:10:49,708 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [0/10308 (0%)] Loss: 10.781969
+2024-04-06 18:14:54,047 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [900/10308 (9%)] Loss: 12.090075
+2024-04-06 18:19:06,003 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [1800/10308 (17%)] Loss: 12.548613
+2024-04-06 18:23:19,551 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [2700/10308 (26%)] Loss: 12.452163
+2024-04-06 18:27:41,461 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [3600/10308 (35%)] Loss: 13.869536
+2024-04-06 18:31:59,198 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [4500/10308 (44%)] Loss: 10.910278
+2024-04-06 18:36:15,072 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [5400/10308 (52%)] Loss: 10.812494
+2024-04-06 18:40:36,999 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [6300/10308 (61%)] Loss: 12.565363
+2024-04-06 18:44:59,464 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [7200/10308 (70%)] Loss: 10.976252
+2024-04-06 18:49:29,691 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [8100/10308 (79%)] Loss: 15.790260
+2024-04-06 18:53:52,514 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [9000/10308 (87%)] Loss: 12.178529
+2024-04-06 18:58:10,015 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 11 [9900/10308 (96%)] Loss: 13.812351
+2024-04-06 19:01:23,991 - PROT.PROT.base.base_trainer - INFO - epoch          : 11
+2024-04-06 19:01:23,992 - PROT.PROT.base.base_trainer - INFO - loss           : 12.343891971624409
+2024-04-06 19:01:23,993 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7693045238653818
+2024-04-06 19:01:23,995 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8671708405017853
+2024-04-06 19:01:23,996 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.7332576985160509
+2024-04-06 19:01:23,997 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.008854613222259408
+2024-04-06 19:01:23,999 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.793145681420962
+2024-04-06 19:01:24,000 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.799970934788386
+2024-04-06 19:01:24,001 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 17.547909021377563
+2024-04-06 19:01:24,002 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 25.156194527943928
+2024-04-06 19:01:24,003 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 609.1055081685384
+2024-04-06 19:01:24,005 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 324.2576319376628
+2024-04-06 19:01:24,006 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 290.07917404174805
+2024-04-06 19:01:24,007 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8732098937034607
+2024-04-06 19:01:24,008 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.05087244821091493
+2024-04-06 19:01:24,009 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.33628023105363053
+2024-04-06 19:01:24,010 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.7144806658228239
+2024-04-06 19:01:24,011 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.6111111144224802
+2024-04-06 19:01:24,013 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.3333333333333333
+2024-04-06 19:01:24,014 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.00655320297748
+2024-04-06 19:01:24,015 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7723564545166889
+2024-04-06 19:01:24,016 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8779838772497494
+2024-04-06 19:01:24,017 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6333662345866437
+2024-04-06 19:01:24,018 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.012866640337712794
+2024-04-06 19:01:24,019 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8208314752226826
+2024-04-06 19:01:24,020 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.833358359402836
+2024-04-06 19:01:24,021 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.104856197244565
+2024-04-06 19:01:24,022 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.640811182915943
+2024-04-06 19:01:24,023 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 800.2536221465501
+2024-04-06 19:01:24,025 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 408.5124814818266
+2024-04-06 19:01:24,026 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 395.9325881127502
+2024-04-06 19:01:24,027 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8649414254694568
+2024-04-06 19:01:24,028 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.057043907798460386
+2024-04-06 19:01:24,029 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.36811506150527595
+2024-04-06 19:01:24,030 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.713013509761867
+2024-04-06 19:01:24,031 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.6629526465716136
+2024-04-06 19:01:24,033 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.46
+2024-04-06 19:01:41,958 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0406-084602/checkpoints/checkpoint-epoch11.pth ...
+2024-04-06 19:02:00,274 - PROT.PROT.base.base_trainer - INFO - Saving current best: saved/patchprot_wo_agg/0406-084602/checkpoints/model_best.pth
+2024-04-06 19:02:02,456 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [0/10308 (0%)] Loss: 11.963774
+2024-04-06 19:06:12,292 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [900/10308 (9%)] Loss: 11.035749
+2024-04-06 19:10:22,686 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [1800/10308 (17%)] Loss: 12.954319
+2024-04-06 19:14:41,611 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [2700/10308 (26%)] Loss: 10.634871
+2024-04-06 19:19:06,311 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [3600/10308 (35%)] Loss: 9.887774
+2024-04-06 19:23:32,611 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [4500/10308 (44%)] Loss: 11.704103
+2024-04-06 19:27:47,708 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [5400/10308 (52%)] Loss: 11.775387
+2024-04-06 19:32:05,051 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [6300/10308 (61%)] Loss: 12.603186
+2024-04-06 19:36:18,748 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [7200/10308 (70%)] Loss: 10.998532
+2024-04-06 19:40:42,451 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [8100/10308 (79%)] Loss: 12.286455
+2024-04-06 19:45:05,220 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [9000/10308 (87%)] Loss: 13.150601
+2024-04-06 19:49:28,613 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 12 [9900/10308 (96%)] Loss: 10.972129
+2024-04-06 19:52:48,728 - PROT.PROT.base.base_trainer - INFO - epoch          : 12
+2024-04-06 19:52:48,729 - PROT.PROT.base.base_trainer - INFO - loss           : 12.324466212013728
+2024-04-06 19:52:48,731 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7774245142936707
+2024-04-06 19:52:48,732 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8855094959338506
+2024-04-06 19:52:48,733 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6181231761972109
+2024-04-06 19:52:48,734 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.009181750404726094
+2024-04-06 19:52:48,736 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.836210717757543
+2024-04-06 19:52:48,737 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8442799349625906
+2024-04-06 19:52:48,738 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 15.919955571492514
+2024-04-06 19:52:48,739 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 21.539318323135376
+2024-04-06 19:52:48,740 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 622.3766962687174
+2024-04-06 19:52:48,741 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 374.735652923584
+2024-04-06 19:52:48,742 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 276.3446814219157
+2024-04-06 19:52:48,743 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8695418983697891
+2024-04-06 19:52:48,744 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.07432302553206682
+2024-04-06 19:52:48,746 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.3609301522374153
+2024-04-06 19:52:48,747 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.7099633440375328
+2024-04-06 19:52:48,748 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.4166666666666667
+2024-04-06 19:52:48,749 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0
+2024-04-06 19:52:48,750 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.6291682764173
+2024-04-06 19:52:48,751 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7717019207363199
+2024-04-06 19:52:48,752 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8776508236503249
+2024-04-06 19:52:48,753 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6211906439436389
+2024-04-06 19:52:48,754 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.011666905623559954
+2024-04-06 19:52:48,755 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8223626742283796
+2024-04-06 19:52:48,757 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8343198211430624
+2024-04-06 19:52:48,758 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 15.922441466708024
+2024-04-06 19:52:48,759 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.20328238265541
+2024-04-06 19:52:48,760 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 883.8871517955597
+2024-04-06 19:52:48,761 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 406.62434439289615
+2024-04-06 19:52:48,762 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 415.4561870335653
+2024-04-06 19:52:48,763 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8648263824162008
+2024-04-06 19:52:48,764 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.06964072923612441
+2024-04-06 19:52:48,765 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.40163125899311064
+2024-04-06 19:52:48,766 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.6138502086248125
+2024-04-06 19:52:48,768 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.43557423027623604
+2024-04-06 19:52:48,769 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.62
+2024-04-06 19:53:05,684 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0406-084602/checkpoints/checkpoint-epoch12.pth ...
+2024-04-06 19:53:07,856 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [0/10308 (0%)] Loss: 10.744813
+2024-04-06 19:57:27,374 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [900/10308 (9%)] Loss: 11.593649
+2024-04-06 20:01:52,817 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [1800/10308 (17%)] Loss: 10.339868
+2024-04-06 20:06:13,192 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [2700/10308 (26%)] Loss: 12.064905
+2024-04-06 20:10:27,426 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [3600/10308 (35%)] Loss: 14.057145
+2024-04-06 20:14:45,896 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [4500/10308 (44%)] Loss: 13.995394
+2024-04-06 20:19:08,814 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [5400/10308 (52%)] Loss: 11.884779
+2024-04-06 20:23:25,098 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [6300/10308 (61%)] Loss: 12.041676
+2024-04-06 20:27:53,858 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [7200/10308 (70%)] Loss: 10.208041
+2024-04-06 20:32:13,081 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [8100/10308 (79%)] Loss: 12.690519
+2024-04-06 20:36:40,909 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [9000/10308 (87%)] Loss: 10.988714
+2024-04-06 20:41:04,199 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 13 [9900/10308 (96%)] Loss: 13.869424
+2024-04-06 20:44:18,333 - PROT.PROT.base.base_trainer - INFO - epoch          : 13
+2024-04-06 20:44:18,334 - PROT.PROT.base.base_trainer - INFO - loss           : 12.17568646508144
+2024-04-06 20:44:18,335 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7574444760878881
+2024-04-06 20:44:18,336 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8768921544154485
+2024-04-06 20:44:18,337 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.6615175207455953
+2024-04-06 20:44:18,339 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.0107905271773537
+2024-04-06 20:44:18,340 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.8097259004910787
+2024-04-06 20:44:18,341 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8222526709238688
+2024-04-06 20:44:18,342 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 17.6918998559316
+2024-04-06 20:44:18,343 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 24.436962922414143
+2024-04-06 20:44:18,344 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 597.3313573201498
+2024-04-06 20:44:18,346 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 329.66235669453937
+2024-04-06 20:44:18,347 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 280.42085965474445
+2024-04-06 20:44:18,348 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.859243298570315
+2024-04-06 20:44:18,349 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.06417846617599328
+2024-04-06 20:44:18,350 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.38415287466098863
+2024-04-06 20:44:18,351 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.689908059934775
+2024-04-06 20:44:18,352 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.7291666716337204
+2024-04-06 20:44:18,353 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.6666666666666666
+2024-04-06 20:44:18,354 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.38520031397633
+2024-04-06 20:44:18,355 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7678315299683391
+2024-04-06 20:44:18,356 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.873919858703754
+2024-04-06 20:44:18,357 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6115904766876175
+2024-04-06 20:44:18,358 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.007918216591907968
+2024-04-06 20:44:18,360 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8196428198216146
+2024-04-06 20:44:18,361 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8323880562703108
+2024-04-06 20:44:18,362 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 16.137383346628
+2024-04-06 20:44:18,363 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.54426002854351
+2024-04-06 20:44:18,364 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 911.2666219380509
+2024-04-06 20:44:18,365 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 424.90348645945755
+2024-04-06 20:44:18,366 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 418.28774426168184
+2024-04-06 20:44:18,367 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8647307277385599
+2024-04-06 20:44:18,369 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.059070700719416475
+2024-04-06 20:44:18,370 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.4042752801988391
+2024-04-06 20:44:18,371 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.6118078550866829
+2024-04-06 20:44:18,372 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.6157894739979192
+2024-04-06 20:44:18,373 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.56
+2024-04-06 20:44:35,927 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0406-084602/checkpoints/checkpoint-epoch13.pth ...
+2024-04-06 20:44:38,586 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [0/10308 (0%)] Loss: 11.562396
+2024-04-06 20:48:54,537 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [900/10308 (9%)] Loss: 10.940912
+2024-04-06 20:53:13,429 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [1800/10308 (17%)] Loss: 11.320920
+2024-04-06 20:57:50,390 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [2700/10308 (26%)] Loss: 10.648074
+2024-04-06 21:02:09,920 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [3600/10308 (35%)] Loss: 14.970631
+2024-04-06 21:06:23,531 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [4500/10308 (44%)] Loss: 15.032684
+2024-04-06 21:10:46,970 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [5400/10308 (52%)] Loss: 11.474108
+2024-04-06 21:15:05,011 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [6300/10308 (61%)] Loss: 11.505274
+2024-04-06 21:19:16,430 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [7200/10308 (70%)] Loss: 14.793525
+2024-04-06 21:23:42,708 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [8100/10308 (79%)] Loss: 14.878757
+2024-04-06 21:27:56,461 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [9000/10308 (87%)] Loss: 11.713354
+2024-04-06 21:32:19,735 - PROT.PROT.trainer.trainer - INFO - Train Epoch: 14 [9900/10308 (96%)] Loss: 11.510220
+2024-04-06 21:35:34,191 - PROT.PROT.base.base_trainer - INFO - epoch          : 14
+2024-04-06 21:35:34,192 - PROT.PROT.base.base_trainer - INFO - loss           : 12.04299463412379
+2024-04-06 21:35:34,193 - PROT.PROT.base.base_trainer - INFO - metric_ss8     : 0.7521834323803583
+2024-04-06 21:35:34,195 - PROT.PROT.base.base_trainer - INFO - metric_ss3     : 0.8672352681557337
+2024-04-06 21:35:34,196 - PROT.PROT.base.base_trainer - INFO - metric_dis_mcc : 0.5905162162574319
+2024-04-06 21:35:34,197 - PROT.PROT.base.base_trainer - INFO - metric_dis_fnr : 0.006440699682570994
+2024-04-06 21:35:34,198 - PROT.PROT.base.base_trainer - INFO - metric_rsa     : 0.802041490872701
+2024-04-06 21:35:34,199 - PROT.PROT.base.base_trainer - INFO - metric_asa     : 0.8147157629330953
+2024-04-06 21:35:34,200 - PROT.PROT.base.base_trainer - INFO - metric_phi     : 17.828860839207966
+2024-04-06 21:35:34,201 - PROT.PROT.base.base_trainer - INFO - metric_psi     : 23.98043616612752
+2024-04-06 21:35:34,202 - PROT.PROT.base.base_trainer - INFO - metric_tasa    : 581.9091606140137
+2024-04-06 21:35:34,203 - PROT.PROT.base.base_trainer - INFO - metric_thsa    : 294.86343638102215
+2024-04-06 21:35:34,204 - PROT.PROT.base.base_trainer - INFO - metric_lhp     : 268.24613157908124
+2024-04-06 21:35:34,205 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_mcc: 0.8534195174773535
+2024-04-06 21:35:34,206 - PROT.PROT.base.base_trainer - INFO - metric_hp_loc_fnr: 0.07917326005796592
+2024-04-06 21:35:34,207 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_mcc: 0.3996210245726009
+2024-04-06 21:35:34,208 - PROT.PROT.base.base_trainer - INFO - metric_lhp_loc_fnr: 0.6329229225715002
+2024-04-06 21:35:34,209 - PROT.PROT.base.base_trainer - INFO - metric_species : 0.4375000037252903
+2024-04-06 21:35:34,210 - PROT.PROT.base.base_trainer - INFO - metric_expression: 0.5
+2024-04-06 21:35:34,211 - PROT.PROT.base.base_trainer - INFO - val_loss       : 13.275463382256428
+2024-04-06 21:35:34,212 - PROT.PROT.base.base_trainer - INFO - val_metric_ss8 : 0.7672356180159369
+2024-04-06 21:35:34,213 - PROT.PROT.base.base_trainer - INFO - val_metric_ss3 : 0.8741954990638579
+2024-04-06 21:35:34,214 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_mcc: 0.6037338370654269
+2024-04-06 21:35:34,215 - PROT.PROT.base.base_trainer - INFO - val_metric_dis_fnr: 0.010688544788317947
+2024-04-06 21:35:34,216 - PROT.PROT.base.base_trainer - INFO - val_metric_rsa : 0.8208673523800839
+2024-04-06 21:35:34,216 - PROT.PROT.base.base_trainer - INFO - val_metric_asa : 0.8333316327680961
+2024-04-06 21:35:34,217 - PROT.PROT.base.base_trainer - INFO - val_metric_phi : 15.942490025200087
+2024-04-06 21:35:34,218 - PROT.PROT.base.base_trainer - INFO - val_metric_psi : 22.208427371134178
+2024-04-06 21:35:34,219 - PROT.PROT.base.base_trainer - INFO - val_metric_tasa: 849.9599791382511
+2024-04-06 21:35:34,220 - PROT.PROT.base.base_trainer - INFO - val_metric_thsa: 413.0761461293126
+2024-04-06 21:35:34,221 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp : 406.52551698860646
+2024-04-06 21:35:34,222 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_mcc: 0.8648588924610306
+2024-04-06 21:35:34,223 - PROT.PROT.base.base_trainer - INFO - val_metric_hp_loc_fnr: 0.04980643525396601
+2024-04-06 21:35:34,224 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_mcc: 0.39091179757291133
+2024-04-06 21:35:34,225 - PROT.PROT.base.base_trainer - INFO - val_metric_lhp_loc_fnr: 0.6602351302933979
+2024-04-06 21:35:34,226 - PROT.PROT.base.base_trainer - INFO - val_metric_species: 0.5355263161031824
+2024-04-06 21:35:34,227 - PROT.PROT.base.base_trainer - INFO - val_metric_expression: 0.58
+2024-04-06 21:35:52,259 - PROT.PROT.base.base_trainer - INFO - Saving checkpoint: saved/patchprot_wo_agg/0406-084602/checkpoints/checkpoint-epoch14.pth ...
+2024-04-06 21:35:52,737 - PROT.PROT.main - INFO - Initialising evaluation
+2024-04-06 21:35:54,267 - PROT.PROT.base.base_eval - INFO - Starting evaluating...
+2024-04-06 21:36:00,753 - PROT.PROT.base.base_eval - INFO - metric_ss8: 0.6847020813396999
+2024-04-06 21:36:00,754 - PROT.PROT.base.base_eval - INFO - metric_ss3: 0.7946010402270726
+2024-04-06 21:36:00,755 - PROT.PROT.base.base_eval - INFO - metric_dis_mcc: 0.5918909907341003
+2024-04-06 21:36:00,756 - PROT.PROT.base.base_eval - INFO - metric_dis_fnr: 0.032076906479362934
+2024-04-06 21:36:00,757 - PROT.PROT.base.base_eval - INFO - metric_rsa: 0.7241745676313128
+2024-04-06 21:36:00,758 - PROT.PROT.base.base_eval - INFO - metric_asa: 0.741055062838963
+2024-04-06 21:36:00,759 - PROT.PROT.base.base_eval - INFO - metric_phi: 20.424745287214005
+2024-04-06 21:36:00,760 - PROT.PROT.base.base_eval - INFO - metric_psi: 32.421929768153596
+2024-04-06 21:36:00,762 - PROT.PROT.base.base_eval - INFO - metric_tasa: 1275.8787536621094
+2024-04-06 21:36:00,763 - PROT.PROT.base.base_eval - INFO - metric_thsa: 720.228777204241
+2024-04-06 21:36:00,764 - PROT.PROT.base.base_eval - INFO - metric_lhp: 449.82926068987166
+2024-04-06 21:36:00,765 - PROT.PROT.base.base_eval - INFO - metric_hp_loc_mcc: 0.8582008566175189
+2024-04-06 21:36:00,766 - PROT.PROT.base.base_eval - INFO - metric_hp_loc_fnr: 0.05312159391386168
+2024-04-06 21:36:00,767 - PROT.PROT.base.base_eval - INFO - metric_lhp_loc_mcc: 0.46085885018110273
+2024-04-06 21:36:00,768 - PROT.PROT.base.base_eval - INFO - metric_lhp_loc_fnr: 0.7060218240533557
+2024-04-06 21:36:00,769 - PROT.PROT.base.base_eval - INFO - metric_species: 1.0
+2024-04-06 21:36:00,770 - PROT.PROT.base.base_eval - INFO - metric_expression: 1.0
+2024-04-06 21:36:02,050 - PROT.PROT.base.base_eval - INFO - Starting evaluating...
+2024-04-06 21:37:14,377 - PROT.PROT.base.base_eval - INFO - metric_ss8: 0.7382079021275392
+2024-04-06 21:37:14,393 - PROT.PROT.base.base_eval - INFO - metric_ss3: 0.8678942312274063
+2024-04-06 21:37:14,403 - PROT.PROT.base.base_eval - INFO - metric_dis_mcc: 0.1492818967173142
+2024-04-06 21:37:14,409 - PROT.PROT.base.base_eval - INFO - metric_dis_fnr: 0.016525731840693766
+2024-04-06 21:37:14,416 - PROT.PROT.base.base_eval - INFO - metric_rsa: 0.8156334979143757
+2024-04-06 21:37:14,421 - PROT.PROT.base.base_eval - INFO - metric_asa: 0.8283954044880225
+2024-04-06 21:37:14,424 - PROT.PROT.base.base_eval - INFO - metric_phi: 18.8345590111805
+2024-04-06 21:37:14,427 - PROT.PROT.base.base_eval - INFO - metric_psi: 25.71819601560894
+2024-04-06 21:37:14,429 - PROT.PROT.base.base_eval - INFO - metric_tasa: 937.9015549776847
+2024-04-06 21:37:14,431 - PROT.PROT.base.base_eval - INFO - metric_thsa: 428.6859751695778
+2024-04-06 21:37:14,433 - PROT.PROT.base.base_eval - INFO - metric_lhp: 416.6643979033532
+2024-04-06 21:37:14,436 - PROT.PROT.base.base_eval - INFO - metric_hp_loc_mcc: 0.8643074358210844
+2024-04-06 21:37:14,440 - PROT.PROT.base.base_eval - INFO - metric_hp_loc_fnr: 0.05868658660089268
+2024-04-06 21:37:14,441 - PROT.PROT.base.base_eval - INFO - metric_lhp_loc_mcc: 0.3346441675119909
+2024-04-06 21:37:14,443 - PROT.PROT.base.base_eval - INFO - metric_lhp_loc_fnr: 0.729065629438712
+2024-04-06 21:37:14,445 - PROT.PROT.base.base_eval - INFO - metric_species: 0.6827485388831088
+2024-04-06 21:37:14,447 - PROT.PROT.base.base_eval - INFO - metric_expression: 0.2692307692307692
+2024-04-06 21:37:16,109 - PROT.PROT.base.base_eval - INFO - Starting evaluating...
+2024-04-06 21:37:35,965 - PROT.PROT.base.base_eval - INFO - metric_ss8: 0.7654233502305072
+2024-04-06 21:37:35,966 - PROT.PROT.base.base_eval - INFO - metric_ss3: 0.8707525180733722
+2024-04-06 21:37:35,968 - PROT.PROT.base.base_eval - INFO - metric_dis_mcc: 0.6485209413682637
+2024-04-06 21:37:35,969 - PROT.PROT.base.base_eval - INFO - metric_dis_fnr: 0.016436057299901934
+2024-04-06 21:37:35,970 - PROT.PROT.base.base_eval - INFO - metric_rsa: 0.7986674531646397
+2024-04-06 21:37:35,971 - PROT.PROT.base.base_eval - INFO - metric_asa: 0.8173723521439925
+2024-04-06 21:37:35,972 - PROT.PROT.base.base_eval - INFO - metric_phi: 16.243858370573623
+2024-04-06 21:37:35,973 - PROT.PROT.base.base_eval - INFO - metric_psi: 23.66918707308562
+2024-04-06 21:37:35,974 - PROT.PROT.base.base_eval - INFO - metric_tasa: 980.4872654127038
+2024-04-06 21:37:35,975 - PROT.PROT.base.base_eval - INFO - metric_thsa: 418.5843152253524
+2024-04-06 21:37:35,976 - PROT.PROT.base.base_eval - INFO - metric_lhp: 517.8415290500807
+2024-04-06 21:37:35,977 - PROT.PROT.base.base_eval - INFO - metric_hp_loc_mcc: 0.8700006713037906
+2024-04-06 21:37:35,978 - PROT.PROT.base.base_eval - INFO - metric_hp_loc_fnr: 0.0542577866140915
+2024-04-06 21:37:35,979 - PROT.PROT.base.base_eval - INFO - metric_lhp_loc_mcc: 0.34229916317955306
+2024-04-06 21:37:35,980 - PROT.PROT.base.base_eval - INFO - metric_lhp_loc_fnr: 0.7259041083895642
+2024-04-06 21:37:35,981 - PROT.PROT.base.base_eval - INFO - metric_species: 0.7450980403844047
+2024-04-06 21:37:35,983 - PROT.PROT.base.base_eval - INFO - metric_expression: 0.8571428571428571
+2024-04-06 21:37:35,985 - PROT.PROT.main - INFO - Finished!
 done

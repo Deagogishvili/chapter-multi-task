@@ -4,20 +4,20 @@ seed: 1234
 target_devices: [0]
 
 arch:
-  type: ESM2_original_extended
+  type: ESM2_extended_multitask
   args:
     init_n_channels: 1280
-    embedding_pretrained: "/scistor/informatica/dgi460/PROT/PROT/pretrained/esm2_t33_650M_UR50D.pt"
+    embedding_pretrained: "/scistor/informatica/dgi460/patchprot/PROT/pretrained/esm2_t33_650M_UR50D.pt"
     finetuning: 'LoRA'
     gradient_checkpointing: 2
 
 data_loader:
   type: NSPDataLoader
   args:
-    train_path: [/scistor/informatica/dgi460/PROT/data/extended/Train_HHblits_extended.npz]
-    test_path: [/scistor/informatica/dgi460/PROT/data/extended/CASP12_HHblits_extended.npz,
-    /scistor/informatica/dgi460/PROT/data/extended/CB513_HHblits_extended.npz,
-    /scistor/informatica/dgi460/PROT/data/extended/TS115_HHblits_extended.npz]
+    train_path: [/scistor/informatica/dgi460/patchprot/data/extended/Train_HHblits_extended.npz]
+    test_path: [/scistor/informatica/dgi460/patchprot/data/extended/CASP12_HHblits_extended.npz,
+    /scistor/informatica/dgi460/patchprot/data/extended/CB513_HHblits_extended.npz,
+    /scistor/informatica/dgi460/patchprot/data/extended/TS115_HHblits_extended.npz]
     dataset_loader: NSPDataOnlyEncoding
     batch_size: 3
     nworkers: 2

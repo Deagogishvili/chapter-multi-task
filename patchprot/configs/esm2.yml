@@ -7,7 +7,7 @@ arch:
   type: ESM2_multitask
   args:
     init_n_channels: 1280
-    embedding_pretrained: "/scistor/informatica/dgi460/PROT/PROT/pretrained/esm2_t33_650M_UR50D.pt"
+    embedding_pretrained: "/scistor/informatica/dgi460/patchprot/PROT/pretrained/esm2_t33_650M_UR50D.pt"
     finetuning: 'LoRA'
     gradient_checkpointing: 2
    
@@ -15,10 +15,10 @@ arch:
 data_loader:
   type: NSPDataLoader
   args:
-    train_path: [/scistor/informatica/dgi460/PROT/data/Train_HHblits.npz]
-    test_path: [/scistor/informatica/dgi460/PROT/data/CASP12_HHblits.npz,
-    /scistor/informatica/dgi460/PROT/data/CB513_HHblits.npz,
-    /scistor/informatica/dgi460/PROT/data/TS115_HHblits.npz]
+    train_path: [/scistor/informatica/dgi460/patchprot/data/Train_HHblits.npz]
+    test_path: [/scistor/informatica/dgi460/patchprot/data/CASP12_HHblits.npz,
+    /scistor/informatica/dgi460/patchprot/data/CB513_HHblits.npz,
+    /scistor/informatica/dgi460/patchprot/data/TS115_HHblits.npz]
     dataset_loader: NSPDataOnlyEncoding
     batch_size: 3
     nworkers: 2

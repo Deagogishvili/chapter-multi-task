@@ -11,14 +11,14 @@ from PROT.embedding import ESM2Embedding
 log = setup_logger(__name__)
 
 
-class ESM2_original_extended(ModelBase):
+class ESM2_extended_multitask(ModelBase):
     def __init__(self, init_n_channels: int, embedding_pretrained: str, out_channels: int = 32, cnn_layers: int = 2, kernel_size: tuple = (129, 257), padding: tuple = (64, 128), n_hidden: int = 1024, dropout: float = 0.5, lstm_layers: int = 2, **kwargs):
         """ Constructor
         Args:
             in_features: size of the embedding features
             language_model: path to the language model weights
         """
-        super(ESM2_original_extended, self).__init__()
+        super(ESM2_extended_multitask, self).__init__()
 
         self.embedding = ESM2Embedding(embedding_pretrained = embedding_pretrained, **kwargs)
 
@@ -85,9 +85,6 @@ class ESM2_original_extended(ModelBase):
         self.expression = nn.Sequential(*[
             nn.Linear(in_features = 2 * n_hidden, out_features = 2),
         ])
-        self.aggregation = nn.Sequential(*[
-            nn.Linear(in_features = 2 * n_hidden, out_features = 2),
-        ])
 
         log.info(f'<init>: \n{self}')
 
@@ -137,6 +134,5 @@ class ESM2_original_extended(ModelBase):
         lhp_loc = self.lhp_loc(x)
         species = self.species(x)
         expression = self.expression(x)
-        aggregation = self.aggregation(x)
 
-        return [ss8, ss3, dis, rsa, phi, psi, tasa, thsa, lhp, hp_loc, lhp_loc, species, expression, aggregation]
+        return [ss8, ss3, dis, rsa, phi, psi, tasa, thsa, lhp, hp_loc, lhp_loc, species, expression]

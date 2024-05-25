@@ -8,12 +8,4 @@ folder benchmarking contains predictions for LHP from old shallow learning algor
 
 folder validation contains proteins from casp14 competition. Folder also contains AlphaFold predictions for these proteins, MolPatch calculations over the target PDB structures and AlphaFold predictions. We predicted LHP of these proteins with PatchProt and compared it with MolPatch calculations over AlphaFold structures.
 
-Folder miscellaneous contains files for data exploration and result interpretation/assessment. 
-alphafold_molpatch.csv contains all human proteins predicted by alphafold and molpatch calculations based on alphafold structures.
-consensus_mapped.txt is id mapping for expression data to be used
-human_proteome.csv is predictions for all human proteins by patchprot
-molpatch_ids_map.txt is id mapping for pdb to UniProt
-molpatch_old.csv contains molpatch calculations for monomeric proteins with known X-ray structures
-rna_tissue_consensus.tsv contains RNA expression values for each protein and tissues it is expressed in. Typically we analyse the largest values, essentially the expression potential for each protein. Notably, RNA values do not directly mean the abundance of a protein, but it is related and must be interpretted with caution.
-
 summary.xlsx - contains the description of the extended data, all the features by which proteins are annotated. Some features are local (residue-based) some are global (one value per protein)
